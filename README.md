@@ -56,12 +56,13 @@ $ git https://github.com/deannabosschert/functional-programming-2021.git
 Then, navigate to this folder and run:
 
 ```bash
-python -m SimpleHTTPServer 8000`
+npm install
 ```
-, or: 
+
+To run the project:
 
 ```bash
-npm install
+npm run dev
 ```
 
 #### Dependencies
@@ -81,11 +82,11 @@ npm install
 
 ## 🧑🏼‍ Actor Diagram
 _Which actors are there in your application? (actor diagram)_
-![actor diagram](https://github.com/deannabosschert/template/blob/master/src/img/actordiagram.png)
+![actor diagram](https://github.com/deannabosschert/functional-programming-2021/blob/master/src/img/actordiagram.png)
 
 ## ↔️ Interaction diagram
 _How does flowed interaction through the application? (interaction diagram)_
-![interaction diagram](https://github.com/deannabosschert/template/blob/master/src/img/interactiondiagram.png)
+![interaction diagram](https://github.com/deannabosschert/functional-programming-2021/blob/master/src/img/interactiondiagram.png)
 
 ## 🌍 Design patterns
 
@@ -154,8 +155,8 @@ Goal: xxx
 
 ### Rubric
 
-[Rubric- detailed rating of my project](https://github.com/deannabosschert/template/wiki/Rubric)
-![rubric](https://github.com/deannabosschert/template/blob/master/src/img/rubric.png)
+[Rubric- detailed rating of my project](https://github.com/deannabosschert/functional-programming-2021/wiki/Rubric)
+![rubric](https://github.com/deannabosschert/functional-programming-2021/blob/master/src/img/rubric.png)
 
 ## ℹ️ Resources
 
@@ -171,5 +172,5 @@ Goal: xxx
 ## 🗺️ License
 
 Author: [Deanna Bosschert](https://github.com/deannabosschert) , license by
-[MIT](https://github.com/deannabosschert/web-app-from-scratch-1920/blob/master/LICENSE)
+[MIT](https://github.com/deannabosschert/functional-programming-2021/blob/master/LICENSE)
 
