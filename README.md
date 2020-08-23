@@ -51,7 +51,7 @@ _What does your app do, what is the goal? (passing butter)_
 ## ⚙️ Installation
 Clone this repository to your own device:
 ```bash
-$ git clone https://github.com/deannabosschert/web-app-from-scratch-1920.git
+$ git https://github.com/deannabosschert/functional-programming-2021.git
 ```
 Then, navigate to this folder and run:
 
