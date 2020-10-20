@@ -1,6 +1,7 @@
 # Functional Programming
 ## Assessment
 Create a data visualisation with d3 based on given data.
+Focus on the data cleaning beforehand.
 
 # Project title
 
@@ -47,7 +48,7 @@ Create a data visualisation with d3 based on given data.
 - [ ] Second item
 
 ## 📋 Concept
-_What does your app do, what is the goal? (passing butter)_ 
+_What does your app do, what is the goal? (passing butter)_
 
 
 ## ⚙️ Installation
@@ -103,7 +104,7 @@ _How does flowed interaction through the application? (interaction diagram)_
 ## 🗃 Data
 
 ### 🐒 API
-_What external data source is featured in your project and what are its properties?_ 
+_What external data source is featured in your project and what are its properties?_
 
 Volkskrant's API
 
@@ -122,7 +123,7 @@ outcome:
 ```
 
 ## 👯🏿‍ Features (+ wishlist)
-_What would you like to add (feature wishlist / backlog)?_ 
+_What would you like to add (feature wishlist / backlog)?_
 
 - [x] one thing
 - [ ] second something
@@ -187,4 +188,3 @@ Goal: xxx
 
 Author: [Deanna Bosschert](https://github.com/deannabosschert) , license by
 [MIT](https://github.com/deannabosschert/functional-programming-2021/blob/master/LICENSE)
-
