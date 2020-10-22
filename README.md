@@ -18,8 +18,8 @@ Focus on the data cleaning beforehand.
 - [✅ To-do](#--to-do)
 - [📋 Concept](#---concept)
 - [⚙️ Installation](#---installation)
-- [🧑🏼‍ Actor Diagram](#------actor-diagram)
-- [↔️ Interaction diagram](#---interaction-diagram)
+<!-- - [🧑🏼‍ Actor Diagram](#------actor-diagram)
+- [↔️ Interaction diagram](#---interaction-diagram) -->
 - [🌍 Design patterns](#---design-patterns)
 - [👍🏽 Best practices](#-----best-practices)
 - [🗃 Data](#---data)
@@ -54,7 +54,7 @@ _What does your app do, what is the goal? (passing butter)_
 ## ⚙️ Installation
 Clone this repository to your own device:
 ```bash
-$ git https://github.com/deannabosschert/functional-programming-2021.git
+$ git https://github.com/deannabosschert/functional-programming.git
 ```
 Then, navigate to this folder and run:
 
@@ -70,26 +70,25 @@ npm run dev
 
 #### Dependencies
 ```json
-{
-  "name": "my-package",
-  "version": "1.0.0",
-  "scripts": {
-    "iets": "iets"
-  },
-  "devDependencies": {
-    "iets": "*"
-  }
+"devDependencies": {
+  "@11ty/eleventy": "^0.11.0",
+  "rimraf": "^3.0.2",
+  "csvtojson": "^2.0.10",
+  "mkdirp": "^0.5.1"
+},
+"dependencies": {
+  "d3": "^5.16.0"
 }
 ```
 
 
-## 🧑🏼‍ Actor Diagram
+<!-- ## 🧑🏼‍ Actor Diagram
 _Which actors are there in your application? (actor diagram)_
 ![actor diagram](https://github.com/deannabosschert/functional-programming-2021/blob/master/src/img/actordiagram.png)
 
 ## ↔️ Interaction diagram
 _How does flowed interaction through the application? (interaction diagram)_
-![interaction diagram](https://github.com/deannabosschert/functional-programming-2021/blob/master/src/img/interactiondiagram.png)
+![interaction diagram](https://github.com/deannabosschert/functional-programming-2021/blob/master/src/img/interactiondiagram.png) -->
 
 ## 🌍 Design patterns
 
@@ -99,6 +98,7 @@ _How does flowed interaction through the application? (interaction diagram)_
 
 ## 👍🏽 Best practices
 - Make sure everything's in functions. No global stuff!
+- Keep your functions as 'to the point' as possible; every function should return 1 thing.
 
 
 ## 🗃 Data
@@ -106,7 +106,7 @@ _How does flowed interaction through the application? (interaction diagram)_
 ### 🐒 API
 _What external data source is featured in your project and what are its properties?_
 
-Volkskrant's API
+Volkskrant's API!
 
 #### Properties
 
@@ -127,7 +127,7 @@ outcome:
 ## 👯🏿‍ Features (+ wishlist)
 _What would you like to add (feature wishlist / backlog)?_
 
-- [x] one thing
+- [ ] Some script that automatically writes the cleaned data to my 'data'-folder
 - [ ] second something
 - [ ] third thing
 
@@ -170,10 +170,10 @@ Goal: xxx
 
 </details>
 
-### Rubric
+<!-- ### Rubric
 
 [Rubric- detailed rating of my project](https://github.com/deannabosschert/functional-programming/wiki/Rubric)
-![rubric](https://github.com/deannabosschert/functional-programming/blob/master/src/img/rubric.png)
+![rubric](https://github.com/deannabosschert/functional-programming/blob/master/src/img/rubric.png) -->
 
 ## ℹ️ Resources
 
