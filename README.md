@@ -115,6 +115,8 @@ Volkskrant's API
 ### 💽 Data cleaning
 _What has been done with the fetched data?_What has been done with the initial data? Cleaning pattern?
 
+See my [Wiki](https://github.com/deannabosschert/functional-programming-2021/wiki/Data-opschonen) for a more detailed view.
+
 ```js
 ```
 
@@ -170,8 +172,8 @@ Goal: xxx
 
 ### Rubric
 
-[Rubric- detailed rating of my project](https://github.com/deannabosschert/functional-programming-2021/wiki/Rubric)
-![rubric](https://github.com/deannabosschert/functional-programming-2021/blob/master/src/img/rubric.png)
+[Rubric- detailed rating of my project](https://github.com/deannabosschert/functional-programming/wiki/Rubric)
+![rubric](https://github.com/deannabosschert/functional-programming/blob/master/src/img/rubric.png)
 
 ## ℹ️ Resources
 
@@ -187,4 +189,4 @@ Goal: xxx
 ## 🗺️ License
 
 Author: [Deanna Bosschert](https://github.com/deannabosschert) , license by
-[MIT](https://github.com/deannabosschert/functional-programming-2021/blob/master/LICENSE)
+[MIT](https://github.com/deannabosschert/functional-programming/blob/master/LICENSE)
