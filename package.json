@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Course in the Tech Track of CMD's Information Design semester, focused on functional programming.",
   "scripts": {
-    "predev": "rimraf _site",
+    "predev": "rimraf docs",
     "dev": "npx @11ty/eleventy --formats=html,gif,jpg,png,css --serve --port=3000",
     "debug": "DEBUG=* eleventy"
   },
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/deannabosschert/functional-programming.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Deanna Bosschert",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/deannabosschert/functional-programming/issues"
@@ -20,7 +20,9 @@
   "homepage": "https://github.com/deannabosschert/functional-programming#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "csvtojson": "^2.0.10",
+    "mkdirp": "^0.5.1"
   },
   "dependencies": {
     "d3": "^5.16.0"
