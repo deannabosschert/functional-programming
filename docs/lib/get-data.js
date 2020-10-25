@@ -1,27 +1,16 @@
 import {
-  dingen
+  questionnaire
 } from "../data/Survey_Information_Design_clean-parsed.js"
 
-const gooiDingen = {
-  column1: () => {
-
-
-    const dingenLijst = dingen.map(ding => ({
-      geboorte: ding.geboortedatum,
-      broers: ding.hoeveelheidBroers
-
+const questionnaireData = {
+  eyeColors: () => {
+    const eyeColors = questionnaire.map(person => ({
+      eyeColor: person.oogKleur
     }))
-
-    // const yeet = "yeet"
-    // return yeet
-    console.log('dingenLijst')
-    // console.log(dingenLijst)
-    return dingenLijst
+    return eyeColors
   }
 }
 
-
-
-    export {
-      gooiDingen
-    }
+export {
+  questionnaireData
+}
