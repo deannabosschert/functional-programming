@@ -4,7 +4,10 @@
   "description": "Course in the Tech Track of CMD's Information Design semester, focused on functional programming.",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "prebuild": "rimraf docs",
+    "build": "npx @11ty/eleventy --formats=html,gif,jpg,png,css --serve --port=3000",
+    "debug": "DEBUG=* eleventy"
   },
   "repository": {
     "type": "git",
