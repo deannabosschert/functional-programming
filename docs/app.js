@@ -5,9 +5,9 @@ import {
 (function init() {
   (async function showData() {
     const dom_eyecolor = document.getElementById("data_eyecolor")
-    let theData = await questionnaireData.eyeColors()
-    dom_eyecolor.innerHTML = theData[0]
+    let cats = await questionnaireData.eyeColors()
+    dom_eyecolor.innerHTML = cats[0]
 
-    console.log(theData)
+    console.log(cats)
   })()
 })()
