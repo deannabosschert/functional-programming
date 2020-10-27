@@ -181,9 +181,9 @@ Goal: xxx
 
 - Our superamazingteachers at the [Tech Track @CMD](https://github.com/cmda-tt/)
 
-### Small inspiration sources
+### (Small) inspiration sources
 
-- one source
+- https://www.section.io/engineering-education/templating-your-static-site/ for using ejs with 11ty
 - second source
 
 ## 🗺️ License
