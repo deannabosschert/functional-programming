@@ -1,12 +1,23 @@
+---
+ding: yeet
+---
 <!doctype html>
 <html lang="en">
 
 <head>
   <% include _head.ejs %>
 </head>
+
 <body>
   <% include _header.ejs %>
   <main>
+    <h2><%= ding %></h2>
+    <ul>
+      <li><%- product_image1 %></li>
+
+
+    </ul>
+
     <%- content %>
   </main>
   <% include _footer.ejs %>

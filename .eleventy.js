@@ -17,11 +17,19 @@
 //   }
 // }
 
-module.exports = function (eleventyConfig) {
+module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy('assets/fonts')
-  eleventyConfig.addPassthroughCopy('assets/img')  
-
-    return {
-        passthroughFileCopy: true
-    };
+  eleventyConfig.addPassthroughCopy('assets/img')
+  return {
+    dir: {
+      input: 'src',
+      data: '_data',
+      includes: '_includes',
+      output: '_site'
+    },
+    templateFormats: ['html', 'ejs'],
+    htmlTemplateEngine: 'ejs',
+    markdownTemplateEngine: 'ejs',
+    passthroughFileCopy: true
+  }
 };
