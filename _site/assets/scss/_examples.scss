@@ -1,0 +1,158 @@
+.x.axis path {
+  display: none;
+}
+
+.x.axis {
+  // display: none;
+}
+
+/* FILL */
+.color-palettes__violet .container {
+  div:nth-child(1) {
+    background-color: $violet-1;
+  }
+
+  div:nth-child(2) {
+    background-color: $violet-2;
+  }
+
+  div:nth-child(3) {
+    background-color: $violet-3;
+  }
+
+  div:nth-child(4) {
+    background-color: $violet-4;
+  }
+
+  div:nth-child(5) {
+    background-color: $violet-5;
+  }
+}
+
+.color-palettes__sunrise .container {
+  div:nth-child(1) {
+    background-color: $sunrise-1;
+  }
+
+  div:nth-child(2) {
+    background-color: $sunrise-2;
+  }
+
+  div:nth-child(3) {
+    background-color: $sunrise-3;
+  }
+
+  div:nth-child(4) {
+    background-color: $sunrise-4;
+  }
+
+  div:nth-child(5) {
+    background-color: $sunrise-5;
+  }
+}
+
+.color-palettes__purple-passion .container {
+  div:nth-child(1) {
+    background-color: $purple-passion-1;
+  }
+
+  div:nth-child(2) {
+    background-color: $purple-passion-2;
+  }
+
+  div:nth-child(3) {
+    background-color: $purple-passion-3;
+  }
+
+  div:nth-child(4) {
+    background-color: $purple-passion-4;
+  }
+
+  div:nth-child(5) {
+    background-color: $purple-passion-5;
+  }
+}
+
+.color-palettes__touch-of-violet .container {
+  div:nth-child(1) {
+    background-color: $touch-of-violet-1;
+  }
+
+  div:nth-child(2) {
+    background-color: $touch-of-violet-2;
+  }
+
+  div:nth-child(3) {
+    background-color: $touch-of-violet-3;
+  }
+
+  div:nth-child(4) {
+    background-color: $touch-of-violet-4;
+  }
+
+  div:nth-child(5) {
+    background-color: $touch-of-violet-5;
+  }
+}
+
+.color-palettes__purple-mint .container {
+  div:nth-child(1) {
+    background-color: $purple-mint-1;
+  }
+
+  div:nth-child(2) {
+    background-color: $purple-mint-2;
+  }
+
+  div:nth-child(3) {
+    background-color: $purple-mint-3;
+  }
+
+  div:nth-child(4) {
+    background-color: $purple-mint-4;
+  }
+
+  div:nth-child(5) {
+    background-color: $purple-mint-5;
+  }
+}
+
+.color-palettes__dusty-violet .container {
+  div:nth-child(1) {
+    background-color: $dusty-violet-1;
+  }
+
+  div:nth-child(2) {
+    background-color: $dusty-violet-2;
+  }
+
+  div:nth-child(3) {
+    background-color: $dusty-violet-3;
+  }
+
+  div:nth-child(4) {
+    background-color: $dusty-violet-4;
+  }
+
+  div:nth-child(5) {
+    background-color: $dusty-violet-5;
+  }
+}
+
+.patterns__dotted-background div:nth-child(2) {
+  background-image: radial-gradient(#ece0ec 10%, transparent 0);
+  background-size: 20px 20px;
+  background-color: #5c365c;
+}
+// source: https://codepen.io/karaWhiteDragon/pen/zYGGMya
+.patterns__plaid-background div:nth-child(2) {
+  color: white;
+  background-color: #66a3ff;
+  background-image: repeating-linear-gradient(transparent, transparent 50px, purple 50px, purple 53px, transparent 53px, transparent 63px, purple 63px, purple 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px), repeating-linear-gradient(270deg, transparent, transparent 50px, purple 50px, purple 53px, transparent 53px, transparent 63px, purple 63px, purple 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px);
+}
+// source: https://codepen.io/foxeisen/pen/KgwYJy
+.patterns__grid-background div:nth-child(2) {
+  background: radial-gradient(black 3px, transparent 4px), radial-gradient(black 3px, transparent 4px), linear-gradient(#fff 4px, transparent 0), linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px), linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px), #fff;
+  background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+  background-position: 54px 55px, 0 0px, 0 0px, 0 0px, 0 0;
+}
