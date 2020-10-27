@@ -44,8 +44,11 @@ Focus on the data cleaning beforehand.
 </details>
 
 ## ✅ To-do
-- [x] First item
-- [ ] Second item
+- [x] Refactor; njk to ejs
+- [x] Change folder structure
+- [ ] Render data via ejs on screen
+- [ ] Add cleaning-functions to /lib
+- [ ] Fetch data from API
 
 ## 📋 Concept
 _What does your app do, what is the goal? (passing butter)_
