@@ -9,8 +9,8 @@ app.set('views', './views')
 app.get('/', function(req, res) {
   QuestionnaireData.eyeColors().then(data => {
     console.log(data)
-    res.render('index.ejs', {
-      colors: data
+    res.render('index.html', {
+      data: data
     })
   })
 })
