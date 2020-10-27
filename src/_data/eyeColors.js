@@ -25,15 +25,35 @@ const CleanEyecolor = require('../lib/filters/clean-eyecolor.js')
 //   return eyeColors;
 // };
 
-module.exports = {
-  eleventyComputed: {
-    myTemplateString: "This is assumed to be a template string!",
-    eenString: "testdingen",
-    product_image1: `<img src="../assets/img/product-image1.jpg" alt="Product Image">`,
-    eyeColors: async data => await CleanEyecolor()
-  }
+// module.exports = {
+//     myTemplateString: "This is assumed to be a template string!",
+//     eenString: "testdingen",
+//     product_image1: `<img src="../assets/img/product-image1.jpg" alt="Product Image">`,
+//     oogkleuren: async function eyeColor() {
+//       let eyeColors = await CleanEyecolor()
+//       console.log('testttt')
+//       console.log(eyeColors[0])
+//       return eyeColors
+//     }
+// }
+
+async function fetchUserData(username) {
+  // do some async things
+  return username;
 }
 
+
+module.exports = async function() {
+  let eyeColor = await CleanEyecolor()
+
+  // let user1 = await fetchUserData("user1");
+  // let user2 = await fetchUserData("user2");
+
+  return eyeColor;
+};
+
+
+//
 // eyeColor()
 // async function eyeColor() {
 //   let eyeColors = await CleanEyecolor()

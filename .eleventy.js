@@ -27,9 +27,8 @@ module.exports = (eleventyConfig) => {
       includes: '_includes',
       output: '_site'
     },
-    templateFormats: ['html', 'ejs'],
-    htmlTemplateEngine: 'ejs',
-    markdownTemplateEngine: 'ejs',
+    templateFormats: ['html', 'njk'],
+    htmlTemplateEngine: 'njk',
     passthroughFileCopy: true
   }
 };
