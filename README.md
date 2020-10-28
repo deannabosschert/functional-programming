@@ -9,14 +9,16 @@ Focus on the data cleaning beforehand.
 (deze screenshot klopt natuurlijk totaal niet met de uiteindelijke site en is gemaakt tijdens development/testing maar fungeert momenteel even als dummy ter opvulling)
 
 ## Parkeergelegenheden in coronatijd
-Welke bijkomende problemen zijn ontstaan met de komst van corona, met betrekking tot parkergelegenheden?
+**Welke bijkomende problemen zijn ontstaan met de komst van corona, met betrekking tot parkeergelegenheden?**
 
-**Deelvraag**: welke parkeerplaatsen zouden qua tijdsframe een probleem kunnen vormen indien er een Corona-avondklok wordt ingevoerd?
-Dataset: https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-TIJDVAK/ixf8-gtwq
-Aanname: een aantal plaatsen zullen gemarkeerd worden als 'twijfelachtig' of ontoegankelijk voor mensen uit niet-vitale beroepen
-Schets: kaart, en nog een visualisatie in de vorm van een bar chart om de aantallen aan te geven (of time instance/gantt?)
+### Deelvraag 1: avondklok
+**Welke parkeerplaatsen zouden qua tijdsframe een probleem kunnen vormen indien er een Corona-avondklok wordt ingevoerd?**
+**Dataset:** https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-TIJDVAK/ixf8-gtwq
+**Aanname:** een aantal plaatsen zullen gemarkeerd worden als 'twijfelachtig' of ontoegankelijk voor mensen uit niet-vitale beroepen   
+**Schets:** kaart, en nog een visualisatie in de vorm van een bar chart om de aantallen aan te geven (of time instance/gantt?)
 
-**Deelvraag**: is er in de buurt van Coronateststraten, genoeg parkeergelegenheid voor wie moet wachten op zijn/haar test?   
+### Deelvraag 2: parkeergelegenheid coronateststraten
+**Is er in de buurt van Coronateststraten, genoeg parkeergelegenheid voor wie moet wachten op zijn/haar test?**
 Datasets:
 * https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-SPECIFICATIES-PARKEERGEBIED/b3us-f26s  
 * Coronateststraten
