@@ -42,7 +42,10 @@ Hoe hoog is het bedrag aan misgelopen parkeerkosten, wanneer je het vergelijkt m
 **Zijn er parkeerplekken die momenteel bezet worden gehouden doordat ze thuiswerken, terwijl ze normaal vrij zijn voor bijv winkelend bezoek van de stad?**     
 **Dataset:** pre-corona parkeerdata en huidige parkeerdata in stadscentra?    
 **Aanname:** er is een verschil in parkeergedrag zichtbaar; mensen parkeren ergens voor langere tijd ipv voor korte periodes aaneen    
-**Schets:** kaart, en gantt/instance chart per situatie om de verschillen in parkeergedrag te tonen?    
+**Schets:** kaart, en gantt/instance chart per situatie om de verschillen in parkeergedrag te tonen?
+
+### Additional Datasets
+* https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-GEOMETRIE-GEBIED/nsk3-v9n7 (thanks to [Zekkie](https://github.com/ZekkieB) via [issue 9](https://github.com/deannabosschert/functional-programming/issues/9)
 
 Persoonlijke noot: de 'deelvragen' zijn waarschijnlijk al onderzoeksvragen op zichzelf, maar ik wacht nog even tot ik locatiedata van teststraten (hopelijk) kan bemachtigen voor ik keuzes maak.
 
