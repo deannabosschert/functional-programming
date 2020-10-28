@@ -26,7 +26,7 @@ Focus on the data cleaning beforehand.
 **Aanname:** een aantal zullen niet genoeg parkeergelegenheid hebben
 **Schets:** kaart, en nog een visualisatie in de vorm van een bar chart om de aantallen aan te geven
 
-### Deelvraag 3:
+### Deelvraag 3: misgelopen parkeerkosten
 **Wat zouden de misgelopen parkeerkosten zijn bij de Coronateststraten?**  
 _Indien je je moet laten testen, mag je op de nabijgelegen parkeerplaats gratis parkeren voor de tijd dat je in de rij staat voor de test.   
 Hoe hoog is het bedrag aan misgelopen parkeerkosten, wanneer je het vergelijkt met de winsten op die plek pre-corona?_
@@ -36,7 +36,7 @@ Hoe hoog is het bedrag aan misgelopen parkeerkosten, wanneer je het vergelijkt m
 **Aanname:** er zal wel een verlies zichbaar zijn, tenzij er bij velen niet duidelijk is aangegeven dat je geen parkeergeld hoeft te betalen en er dan dus juist wél parkeerkaartjes worden gekocht  
 **Schets:** line graph, en kaart (bubble map) met de gebieden met grootste verliezen worden aangeduid?
 
-### Deelvraag 3:
+### Deelvraag 4: parkeerplaatsen bezet door thuiswerkers
 **Zijn er parkeerplekken die momenteel bezet worden gehouden doordat ze thuiswerken, terwijl ze normaal vrij zijn voor bijv winkelend bezoek van de stad?**
 **Dataset:** pre-corona parkeerdata en huidige parkeerdata in stadscentra?
 **Aanname:** er is een verschil in parkeergedrag zichtbaar; mensen parkeren ergens voor langere tijd ipv voor korte periodes aaneen
