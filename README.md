@@ -4,23 +4,22 @@ Create a data visualisation with d3 based on given data.
 Focus on the data cleaning beforehand.
 
 # Auto’s in de stad
+[link to deploy](https://functional-programming-2021.netlify.app/) [![Netlify Status](https://api.netlify.com/api/v1/badges/eaf5a426-0c2d-4380-b88d-e4441f880600/deploy-status)](https://app.netlify.com/sites/functional-programming-2021/deploys)
+![screenshot of website](https://paper-attachments.dropbox.com/s_32CDEAFA631B217EFA0891F586D7083AA233C4CE2AD042263B6C54D870A69D7E_1603883617505_image.png)
 
-[link to deploy][screenshot of website]
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9aec17a8-142c-40c1-a2b2-ad3e73f9f652/deploy-status)](https://app.netlify.com/sites/functionalprogramming/deploys)
 
 **Onderzoeksvraag**: welke parkeerplaatsen zouden qua tijdsframe een probleem kunnen vormen indien er een Corona-avondklok wordt ingevoerd?
 Dataset: https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-TIJDVAK/ixf8-gtwq
 
-**Onderzoeksvraag**: is er in de buurt van Coronateststraten, genoeg parkeergelegenheid voor wie moet wachten op zijn/haar test?
-Dataset: https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-SPECIFICATIES-PARKEERGEBIED/b3us-f26s
+**Onderzoeksvraag**: is er in de buurt van Coronateststraten, genoeg parkeergelegenheid voor wie moet wachten op zijn/haar test?   
+Dataset: https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-SPECIFICATIES-PARKEERGEBIED/b3us-f26s   
 
-**Onderzoeksvraag**: wat zouden de misgelopen parkeerkosten zijn bij de Coronateststraten?
-Indien je je moet laten testen, mag je op de nabijgelegen parkeerplaats gratis parkeren voor de tijd dat je in de rij staat voor de test.
-Hoe hoog is het bedrag aan misgelopen parkeerkosten, wanneer je het vergelijkt met de winsten op die plek pre-corona?
-Dataset: https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-TARIEFDEEL/534e-5vdg
+**Onderzoeksvraag**: wat zouden de misgelopen parkeerkosten zijn bij de Coronateststraten?   
+Indien je je moet laten testen, mag je op de nabijgelegen parkeerplaats gratis parkeren voor de tijd dat je in de rij staat voor de test.   
+Hoe hoog is het bedrag aan misgelopen parkeerkosten, wanneer je het vergelijkt met de winsten op die plek pre-corona?   
+Dataset: https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-TARIEFDEEL/534e-5vdg.  
 
-For more ideas, see the [Wiki page about my concept](https://github.com/deannabosschert/functional-programming/wiki)
+For more ideas, see the [Wiki page about my concept](https://github.com/deannabosschert/functional-programming/wiki)  
 
 <details>
   <summary><strong>Table of Contents</strong> (click to expand)</summary>
