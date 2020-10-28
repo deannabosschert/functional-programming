@@ -45,7 +45,7 @@ Hoe hoog is het bedrag aan misgelopen parkeerkosten, wanneer je het vergelijkt m
 **Schets:** kaart, en gantt/instance chart per situatie om de verschillen in parkeergedrag te tonen?
 
 ### Additional Datasets
-* https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-GEOMETRIE-GEBIED/nsk3-v9n7 (thanks to [Zekkie](https://github.com/ZekkieB) via [issue 9](https://github.com/deannabosschert/functional-programming/issues/9)
+* https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-GEOMETRIE-GEBIED/nsk3-v9n7 (thanks to [Zekkie](https://github.com/ZekkieB) via [issue 9](https://github.com/deannabosschert/functional-programming/issues/9))
 
 Persoonlijke noot: de 'deelvragen' zijn waarschijnlijk al onderzoeksvragen op zichzelf, maar ik wacht nog even tot ik locatiedata van teststraten (hopelijk) kan bemachtigen voor ik keuzes maak.
 
@@ -232,6 +232,7 @@ See my [wiki](https://github.com/deannabosschert/functional-programming/wiki) fo
 
 - Our superamazingteachers at the [Tech Track @CMD](https://github.com/cmda-tt/)
 - Curran :heart:
+- [Zekkie](https://github.com/ZekkieB) for feedback (see _Issues_)
 
 ### (Small) inspiration sources
 
