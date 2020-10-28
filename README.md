@@ -3,12 +3,24 @@
 Create a data visualisation with d3 based on given data.
 Focus on the data cleaning beforehand.
 
-# Project title
+# Auto’s in de stad
 
 [link to deploy][screenshot of website]
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9aec17a8-142c-40c1-a2b2-ad3e73f9f652/deploy-status)](https://app.netlify.com/sites/functionalprogramming/deploys)
 
+**Onderzoeksvraag**: welke parkeerplaatsen zouden qua tijdsframe een probleem kunnen vormen indien er een Corona-avondklok wordt ingevoerd?
+Dataset: https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-TIJDVAK/ixf8-gtwq
+
+**Onderzoeksvraag**: is er in de buurt van Coronateststraten, genoeg parkeergelegenheid voor wie moet wachten op zijn/haar test?
+Dataset: https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-SPECIFICATIES-PARKEERGEBIED/b3us-f26s
+
+**Onderzoeksvraag**: wat zouden de misgelopen parkeerkosten zijn bij de Coronateststraten?
+Indien je je moet laten testen, mag je op de nabijgelegen parkeerplaats gratis parkeren voor de tijd dat je in de rij staat voor de test.
+Hoe hoog is het bedrag aan misgelopen parkeerkosten, wanneer je het vergelijkt met de winsten op die plek pre-corona?
+Dataset: https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-TARIEFDEEL/534e-5vdg
+
+For more ideas, see the [Wiki page about my concept](https://github.com/deannabosschert/functional-programming/wiki)
 
 <details>
   <summary><strong>Table of Contents</strong> (click to expand)</summary>
@@ -46,13 +58,16 @@ Focus on the data cleaning beforehand.
 ## ✅ To-do
 - [x] Refactor; njk to ejs
 - [x] Change folder structure
-- [ ] Render data via ejs on screen
+- [x] Render data via ejs on screen
+- [x] Refactor: ejs to njk
+- [x] Render data via njk
+- [ ] Render data correctly
 - [ ] Add cleaning-functions to /lib
 - [ ] Fetch data from API
 
 ## 📋 Concept
 _What does your app do, what is the goal? (passing butter)_
-
+Conceptvragen zijn hierboven al uitgewerkt; zodra de app 'klaar' is zal ik hier onder 'concept' van begin tot eind beschrijven wat de gebruiker specifiek op mijn site kan doen. Zal ook in het Engels uitgeschreven worden.
 
 ## ⚙️ Installation
 Clone this repository to your own device:
@@ -74,14 +89,20 @@ npm run dev
 #### Dependencies
 ```json
 "devDependencies": {
-  "@11ty/eleventy": "^0.11.0",
-  "rimraf": "^3.0.2",
-  "csvtojson": "^2.0.10",
-  "mkdirp": "^0.5.1"
-},
-"dependencies": {
-  "d3": "^5.16.0"
-}
+    "@11ty/eleventy": "^0.11.0",
+    "cross-env": "^7.0.2",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2",
+    "csvtojson": "^2.0.10",
+    "mkdirp": "^0.5.1"
+  },
+  "dependencies": {
+    "d3": "^5.16.0",
+    "nodemon": "^2.0.2"
+  }
 ```
 
 
@@ -93,27 +114,30 @@ _Which actors are there in your application? (actor diagram)_
 _How does flowed interaction through the application? (interaction diagram)_
 ![interaction diagram](https://github.com/deannabosschert/functional-programming-2021/blob/master/src/img/interactiondiagram.png) -->
 
-## 🌍 Design patterns
+<!-- ## 🌍 Design patterns
 
 - opsomming
 - van
-- patterns
+- patterns -->
 
 ## 👍🏽 Best practices
 - Make sure everything's in functions. No global stuff!
-- Keep your functions as 'to the point' as possible; every function should return 1 thing.
+- Keep your functions as 'to the point' as possible; every function should only return 1 thing.
+- Every function should also return _something_.
 
 
 ## 🗃 Data
 
 ### 🐒 API
 _What external data source is featured in your project and what are its properties?_
-
-Volkskrant's API!
+RDW dataset
 
 #### Properties
+* AreaID
+* Prices
 
 #### Rate limiting
+None! Or well, 1.3 million I've heard.
 
 ### 💽 Data cleaning
 _What has been done with the fetched data?_What has been done with the initial data? Cleaning pattern?
@@ -130,10 +154,7 @@ outcome:
 ## 👯🏿‍ Features (+ wishlist)
 _What would you like to add (feature wishlist / backlog)?_
 
-- [ ] Some script that automatically writes the cleaned data to my 'data'-folder
-- [ ] second something
-- [ ] third thing
-
+- [ ] Some script that automatically writes the cleaned data to my 'data'-folder in prebuild
 
 ## 🏫 Assignment
 <details>
@@ -158,18 +179,16 @@ This assessment focusses on:
 * subgoal 9 (use libraries)
 
 
-### Week 1 - title 🐒
+### Week 1 - Data Cleaning 🐒
 
-Goal: xxx
---> hoe heb ik dit gedaan? --> verwijzing naar wiki, of inklappen?
+Goal: learn how to create with libraries
+I've learned how to load data locally and to fetch externally from an API, to clean that data and render this data.
+See my [wiki](https://github.com/deannabosschert/functional-programming/wiki) for more.
 
-### Week 2 - title 🛠
-
-Goal: xxx
-
-### Week 3 - title 🎁
-
-Goal: xxx
+### Week 2 - Datavisualizations 📊
+Goal: create interactive visualisations from external data
+I've learned how to visualize the previous cleaned data in an interactive datavisualization, made with D3.js
+See my [wiki](https://github.com/deannabosschert/functional-programming/wiki) for more.
 
 </details>
 
@@ -183,6 +202,7 @@ Goal: xxx
 ### Credits
 
 - Our superamazingteachers at the [Tech Track @CMD](https://github.com/cmda-tt/)
+- Curran :heart:
 
 ### (Small) inspiration sources
 
