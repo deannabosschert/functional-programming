@@ -7,20 +7,22 @@ assignees: ''
 
 ---
 
-# ⚙️Issue
-## 📁 Part of repo
-_about what part of my repo is this issue? e.g. index.html, app.js, readme.md, etc_
+# ⚙️ Issue
+## 📁 Part of repo: Readme
+_about what part of my repo this issue is, e.g. index.html, app.js, readme.md, etc_
 
-## 🖊️ Issue itself
+## 🖊️ Issue itself: onderzoeksvraag
 _what is this issue about?_
-### Onderzoeksvraag
-Begrijp je de onderzoeksvraag die in de Readme staat?   
+### Begrijp je de onderzoeksvraag die in de Readme staat?   
+[zet hier je antwoord neer]
 
-### Subvragen
-Welke (sub)vragen roept deze onderzoeksvraag bij je op?
+### Welke (sub)vragen roept deze onderzoeksvraag bij je op?
+[zet hier je antwoord neer]
 
-## 📈Recommendation
+## 📈 Recommendation
 _what would you recommend (instead)?_
-Welke data zou ik nog meer zou kunnen gebruiken bij deze vraag?
+### Welke data zou ik nog meer zou kunnen gebruiken bij deze vraag?
+[zet hier je antwoord neer]
+
 
 ![we've got issues](https://media.giphy.com/media/4Mni3cxTuKHDi/giphy.gif)
