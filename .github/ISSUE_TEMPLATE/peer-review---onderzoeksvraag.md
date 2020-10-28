@@ -1,8 +1,8 @@
 ---
-name: "Peer review \U0001F465"
-about: Use this template to create issues during the peer reviews.
-title: "Peer review \U0001F465"
-labels: 'peer-review'
+name: "Peer review: Onderzoeksvraag \U0001F465"
+about: Use this template to create issues about the onderzoeksvraag during the peer reviews.
+title: "Peer review: Onderzoeksvraag \U0001F465"
+labels: 'peer-review-onderzoeksvraag'
 assignees: ''
 
 ---
