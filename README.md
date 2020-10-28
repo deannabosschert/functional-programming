@@ -4,7 +4,7 @@ Create a data visualisation with d3 based on given data.
 Focus on the data cleaning beforehand.
 
 # Auto’s in de stad
-[![Netlify Status](https://api.netlify.com/api/v1/badges/eaf5a426-0c2d-4380-b88d-e4441f880600/deploy-status)](https://app.netlify.com/sites/functional-programming-2021/deploys) ... [link to deploy](https://functional-programming-2021.netlify.app/) 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/eaf5a426-0c2d-4380-b88d-e4441f880600/deploy-status)](https://app.netlify.com/sites/functional-programming-2021/deploys) ... [link to deploy](https://functional-programming-2021.netlify.app/)
 ![screenshot of website](https://paper-attachments.dropbox.com/s_32CDEAFA631B217EFA0891F586D7083AA233C4CE2AD042263B6C54D870A69D7E_1603883617505_image.png)
 (deze screenshot klopt natuurlijk totaal niet met de uiteindelijke site en is gemaakt tijdens development/testing maar fungeert momenteel even als dummy ter opvulling)
 
@@ -19,26 +19,28 @@ Focus on the data cleaning beforehand.
 
 ### Deelvraag 2: parkeergelegenheid coronateststraten
 **Is er in de buurt van Coronateststraten, genoeg parkeergelegenheid voor wie moet wachten op zijn/haar test?**
-Datasets:
+**Datasets:**
 * https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-SPECIFICATIES-PARKEERGEBIED/b3us-f26s  
 * Coronateststraten
 * Drukte bij Coronateststraten
-Aanname: een aantal zullen niet genoeg parkeergelegenheid hebben
-Schets: kaart, en nog een visualisatie in de vorm van een bar chart om de aantallen aan te geven
+**Aanname:** een aantal zullen niet genoeg parkeergelegenheid hebben
+**Schets:** kaart, en nog een visualisatie in de vorm van een bar chart om de aantallen aan te geven
 
-**Deelvraag**: wat zouden de misgelopen parkeerkosten zijn bij de Coronateststraten?   
+### Deelvraag 3:
+**Wat zouden de misgelopen parkeerkosten zijn bij de Coronateststraten?**  
 _Indien je je moet laten testen, mag je op de nabijgelegen parkeerplaats gratis parkeren voor de tijd dat je in de rij staat voor de test.   
 Hoe hoog is het bedrag aan misgelopen parkeerkosten, wanneer je het vergelijkt met de winsten op die plek pre-corona?_
-Datasets:
+**Datasets:**
 * https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-TARIEFDEEL/534e-5vdg.  
 * Coronateststraten
-Aanname: er zal wel een verlies zichbaar zijn, tenzij er bij velen niet duidelijk is aangegeven dat je geen parkeergeld hoeft te betalen en er dan dus juist wél parkeerkaartjes worden gekocht  
-Schets: line graph, en kaart (bubble map) met de gebieden met grootste verliezen worden aangeduid? 
+**Aanname:** er zal wel een verlies zichbaar zijn, tenzij er bij velen niet duidelijk is aangegeven dat je geen parkeergeld hoeft te betalen en er dan dus juist wél parkeerkaartjes worden gekocht  
+**Schets:** line graph, en kaart (bubble map) met de gebieden met grootste verliezen worden aangeduid?
 
-**Deelvraag**: zijn er parkeerplekken die momenteel bezet worden gehouden doordat ze thuiswerken, terwijl ze normaal vrij zijn voor bijv winkelend bezoek van de stad? 
-Dataset: pre-corona parkeerdata en huidige parkeerdata in stadscentra?
-Aanname: er is een verschil in parkeergedrag zichtbaar; mensen parkeren ergens voor langere tijd ipv voor korte periodes aaneen
-Schets: kaart, en gantt/instance chart per situatie om de verschillen in parkeergedrag te tonen?
+### Deelvraag 3:
+**Zijn er parkeerplekken die momenteel bezet worden gehouden doordat ze thuiswerken, terwijl ze normaal vrij zijn voor bijv winkelend bezoek van de stad?**
+**Dataset:** pre-corona parkeerdata en huidige parkeerdata in stadscentra?
+**Aanname:** er is een verschil in parkeergedrag zichtbaar; mensen parkeren ergens voor langere tijd ipv voor korte periodes aaneen
+**Schets:** kaart, en gantt/instance chart per situatie om de verschillen in parkeergedrag te tonen?
 
 Persoonlijke noot: de 'deelvragen' zijn waarschijnlijk al onderzoeksvragen op zichzelf, maar ik wacht nog even tot ik locatiedata van teststraten (hopelijk) kan bemachtigen voor ik keuzes maak.
 
