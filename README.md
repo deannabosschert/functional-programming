@@ -2,6 +2,7 @@
 ## Assessment
 Create a data visualisation with d3 based on given data.
 Focus on the data cleaning beforehand.
+-->Alle teksten in het Nederlands behoren tot de concept/developmentfase, uiteindelijk zal de readme volledig in het Engels zijn. Zo kan ik concept VS eindproduct wat beter scheiden.<--
 
 # Auto’s in de stad
 [![Netlify Status](https://api.netlify.com/api/v1/badges/eaf5a426-0c2d-4380-b88d-e4441f880600/deploy-status)](https://app.netlify.com/sites/functional-programming-2021/deploys) ... [link to deploy](https://functional-programming-2021.netlify.app/)
