@@ -7,10 +7,10 @@ assignees: ''
 
 ---
 
-# ⚙️ Issue
+# ⚙️ Onderzoeksvraag
 ## 📁 Part of repo: Readme
 
-## 🖊️ Issue itself: onderzoeksvraag
+## 🖊️ Issue
 ### Begrijp je de onderzoeksvraag die in de Readme staat?   
 _[zet hier je antwoord neer]_
 
