@@ -206,7 +206,9 @@ See my [wiki](https://github.com/deannabosschert/functional-programming/wiki) fo
 ### (Small) inspiration sources
 
 - https://www.section.io/engineering-education/templating-your-static-site/ for using ejs with 11ty
-- second source
+- https://opendata.rdw.nl/browse?category=Parkeren&provenance=official&page=1 for the datasets
+- Docs of Nunjucks, Eleventy, EJS, D3.js, etc.
+- My former projects, like progressive-web-apps
 
 ## 🗺️ License
 
