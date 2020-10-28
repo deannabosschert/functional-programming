@@ -22,7 +22,8 @@ Focus on the data cleaning beforehand.
 **Datasets:**    
 * https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-SPECIFICATIES-PARKEERGEBIED/b3us-f26s      
 * Coronateststraten    
-* Drukte bij Coronateststraten    
+* Drukte bij Coronateststraten  
+
 **Aanname:** een aantal zullen niet genoeg parkeergelegenheid hebben    
 **Schets:** kaart, en nog een visualisatie in de vorm van een bar chart om de aantallen aan te geven    
 
@@ -33,6 +34,7 @@ Hoe hoog is het bedrag aan misgelopen parkeerkosten, wanneer je het vergelijkt m
 **Datasets:**    
 * https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-TARIEFDEEL/534e-5vdg.   
 * Coronateststraten    
+
 **Aanname:** er zal wel een verlies zichbaar zijn, tenzij er bij velen niet duidelijk is     aangegeven dat je geen parkeergeld hoeft te betalen en er dan dus juist wél parkeerkaartjes worden gekocht   
 **Schets:** line graph, en kaart (bubble map) met de gebieden met grootste verliezen worden aangeduid?    
 
