@@ -65,7 +65,7 @@ For more ideas, see the [Wiki page about my concept](https://github.com/deannabo
 - [ ] Fetch data from API
 
 ## 📋 Concept
-_What does your app do, what is the goal? (passing butter)_
+_What does your app do, what is the goal? (passing butter)_   
 Conceptvragen zijn hierboven al uitgewerkt; zodra de app 'klaar' is zal ik hier onder 'concept' van begin tot eind beschrijven wat de gebruiker specifiek op mijn site kan doen. Zal ook in het Engels uitgeschreven worden.
 
 ## ⚙️ Installation
@@ -180,14 +180,14 @@ This assessment focusses on:
 
 ### Week 1 - Data Cleaning 🐒
 
-Goal: learn how to create with libraries
-I've learned how to load data locally and to fetch externally from an API, to clean that data and render this data.
-See my [wiki](https://github.com/deannabosschert/functional-programming/wiki) for more.
+**Goal**: learn how to create with libraries   
+I've learned how to load data locally and to fetch externally from an API, to clean that data and render this data.    
+See my [wiki](https://github.com/deannabosschert/functional-programming/wiki) for more.    
 
 ### Week 2 - Datavisualizations 📊
-Goal: create interactive visualisations from external data
-I've learned how to visualize the previous cleaned data in an interactive datavisualization, made with D3.js
-See my [wiki](https://github.com/deannabosschert/functional-programming/wiki) for more.
+**Goal**: create interactive visualisations from external data    
+I've learned how to visualize the previous cleaned data in an interactive datavisualization, made with D3.js   
+See my [wiki](https://github.com/deannabosschert/functional-programming/wiki) for more.    
 
 </details>
 
