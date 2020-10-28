@@ -13,17 +13,30 @@ Welke bijkomende problemen zijn ontstaan met de komst van corona, met betrekking
 
 **Deelvraag**: welke parkeerplaatsen zouden qua tijdsframe een probleem kunnen vormen indien er een Corona-avondklok wordt ingevoerd?
 Dataset: https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-TIJDVAK/ixf8-gtwq
+Aanname: een aantal plaatsen zullen gemarkeerd worden als 'twijfelachtig' of ontoegankelijk voor mensen uit niet-vitale beroepen
+Schets: kaart, en nog een visualisatie in de vorm van een bar chart om de aantallen aan te geven (of time instance/gantt?)
 
 **Deelvraag**: is er in de buurt van Coronateststraten, genoeg parkeergelegenheid voor wie moet wachten op zijn/haar test?   
-Dataset: https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-SPECIFICATIES-PARKEERGEBIED/b3us-f26s   
+Datasets:
+* https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-SPECIFICATIES-PARKEERGEBIED/b3us-f26s  
+* Coronateststraten
+* Drukte bij Coronateststraten
+Aanname: een aantal zullen niet genoeg parkeergelegenheid hebben
+Schets: kaart, en nog een visualisatie in de vorm van een bar chart om de aantallen aan te geven
 
 **Deelvraag**: wat zouden de misgelopen parkeerkosten zijn bij de Coronateststraten?   
 _Indien je je moet laten testen, mag je op de nabijgelegen parkeerplaats gratis parkeren voor de tijd dat je in de rij staat voor de test.   
 Hoe hoog is het bedrag aan misgelopen parkeerkosten, wanneer je het vergelijkt met de winsten op die plek pre-corona?_
-Dataset: https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-TARIEFDEEL/534e-5vdg.  
+Datasets:
+* https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-TARIEFDEEL/534e-5vdg.  
+* Coronateststraten
+Aanname: er zal wel een verlies zichbaar zijn, tenzij er bij velen niet duidelijk is aangegeven dat je geen parkeergeld hoeft te betalen en er dan dus juist wél parkeerkaartjes worden gekocht  
+Schets: line graph, en kaart (bubble map) met de gebieden met grootste verliezen worden aangeduid? 
 
 **Deelvraag**: zijn er parkeerplekken die momenteel bezet worden gehouden doordat ze thuiswerken, terwijl ze normaal vrij zijn voor bijv winkelend bezoek van de stad? 
 Dataset: pre-corona parkeerdata en huidige parkeerdata in stadscentra?
+Aanname: er is een verschil in parkeergedrag zichtbaar; mensen parkeren ergens voor langere tijd ipv voor korte periodes aaneen
+Schets: kaart, en gantt/instance chart per situatie om de verschillen in parkeergedrag te tonen?
 
 Persoonlijke noot: de 'deelvragen' zijn waarschijnlijk al onderzoeksvragen op zichzelf, maar ik wacht nog even tot ik locatiedata van teststraten (hopelijk) kan bemachtigen voor ik keuzes maak.
 
