@@ -7,10 +7,10 @@ app.set('view engine', 'ejs')
 app.set('views', './views')
 
 app.get('/', function(req, res) {
-  QuestionnaireData.eyeColors().then(data => {
-    console.log(data)
+  QuestionnaireData.eyeColors().then(eyeColors => {
+    console.log(eyeColors)
     res.render('index.html', {
-      data: data
+      eyeColors: eyeColors
     })
   })
 })

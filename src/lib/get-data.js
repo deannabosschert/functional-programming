@@ -6,15 +6,15 @@ const QuestionnaireData = {
     return cleanedEyecolors
   }
 }
-
-function dingenDoen() {
-  const haha = "hahaha"
-  return haha
-}
-
-function mixTogether(data) {
-  console.log("mixin'")
-  return data.join()
-}
+//
+// function dingenDoen() {
+//   const haha = "hahaha"
+//   return haha
+// }
+//
+// function mixTogether(data) {
+//   console.log("mixin'")
+//   return data.join()
+// }
 
 module.exports = QuestionnaireData

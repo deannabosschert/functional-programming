@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {% include "_head.html" %}
+</head>
+
+<body>
+{% include "_header.html" %}
+  <main>
+    {{ content | safe }}
+  </main>
+{% include "_footer.html" %}
+</body>
+
+</html>

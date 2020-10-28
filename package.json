@@ -4,7 +4,7 @@
   "description": "Course in the Tech Track of CMD's Information Design semester, focused on functional programming.",
   "scripts": {
     "predev": "rimraf _site",
-    "dev:eleventy": "npx @11ty/eleventy --formats=html,gif,jpg,png,css --serve --port=3000",
+    "dev:eleventy": "npx @11ty/eleventy --formats=html,njk,ejs,gif,jpg,png,css --serve --port=3000",
     "dev:css": "sass --watch assets/scss:_site/assets/css/",
     "dev": "cross-env ELEVENTY_ENV=development run-p dev:*",
     "debug": "DEBUG=* eleventy"
