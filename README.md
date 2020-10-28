@@ -22,6 +22,9 @@ _Indien je je moet laten testen, mag je op de nabijgelegen parkeerplaats gratis 
 Hoe hoog is het bedrag aan misgelopen parkeerkosten, wanneer je het vergelijkt met de winsten op die plek pre-corona?_
 Dataset: https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-TARIEFDEEL/534e-5vdg.  
 
+**Deelvraag**: zijn er parkeerplekken die momenteel bezet worden gehouden doordat ze thuiswerken, terwijl ze normaal vrij zijn voor bijv winkelend bezoek van de stad? 
+Dataset: pre-corona parkeerdata en huidige parkeerdata in stadscentra?
+
 Persoonlijke noot: de 'deelvragen' zijn waarschijnlijk al onderzoeksvragen op zichzelf, maar ik wacht nog even tot ik locatiedata van teststraten (hopelijk) kan bemachtigen voor ik keuzes maak.
 
 For more ideas, see the [Wiki page about my concept](https://github.com/deannabosschert/functional-programming/wiki)  
