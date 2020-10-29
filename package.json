@@ -7,7 +7,8 @@
     "dev:eleventy": "npx @11ty/eleventy --formats=html,njk,ejs,gif,jpg,png,css --serve --port=3000",
     "dev:css": "sass --watch assets/scss:docs/assets/css/",
     "dev": "cross-env ELEVENTY_ENV=development run-p dev:*",
-    "debug": "DEBUG=* eleventy"
+    "debug": "DEBUG=* eleventy",
+    "build": "npx eleventy"
   },
   "repository": {
     "type": "git",
