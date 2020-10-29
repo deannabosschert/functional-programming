@@ -15,7 +15,7 @@ async function CleanEyecolor(cleanedEyecolor) {
 }
 
 function getEyeColors(questionnaire) {
-  return eyeColors = questionnaire.map(person => ({
+  return questionnaire.map(person => ({
     eyeColor: person.oogKleur
   }))
 }
