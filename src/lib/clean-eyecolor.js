@@ -4,14 +4,12 @@ const questionnaire = require('../_data/Survey_Information_Design_clean-parsed.j
 async function CleanEyecolor() {
   try {
     let eyeColors = getData(questionnaire)  // get all eyecolor-data
-    let cleanEyeColors = addHash(eyeColors)    // add hashtag and make everything uppercase
-      .then(withHash => toUpperCase(withHash))
-      .then(uppercase => uppercase)
-    return cleanedEyecolor = await cleanEyeColors
+    return cleanEyeColors = await addHash(eyeColors)
+      .then(withHash => toUpperCase(withHash)) // add hashtag
+      .then(uppercase => uppercase) //  make everything uppercase
   } catch (err) {
     console.error(err)
   }
-  resolve()
 }
 
 function getData(datasource) {
