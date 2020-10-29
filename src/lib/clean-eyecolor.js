@@ -25,7 +25,8 @@ function addHash(data, withHash) {
       if (eyeColor.startsWith('#')) {
         return eyeColor
       } else {
-        return newEyecolor = '#'.concat(eyeColor);
+        return eyeColor
+         // newEyecolor = '#'.concat(eyeColor);
       }
     })
     resolve(withHash)
@@ -35,10 +36,15 @@ function addHash(data, withHash) {
 function toUpperCase(lowercase, uppercase) { // dummy/template function for second filter, added in advance
   return new Promise((resolve, reject) => {
     const uppercase = lowercase.map((sentence) => {
-      return sentence.toUpperCase()
+      const trimmed = removeWhitespace(sentence)
+      return trimmed.toUpperCase()
     })
     resolve(uppercase)
   })
+}
+
+function removeWhitespace(data) {
+  return data.trim()
 }
 //
 //
