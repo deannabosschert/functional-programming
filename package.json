@@ -8,7 +8,10 @@
     "dev:css": "sass --watch assets/scss:docs/assets/css/",
     "dev": "cross-env ELEVENTY_ENV=development run-p dev:*",
     "debug": "DEBUG=* eleventy",
-    "build": "npx eleventy"
+    "prebuild": "rimraf docs",
+    "build": "cross-env ELEVENTY_ENV=production run-s build:*",
+    "build:eleventy": "eleventy",
+    "build:css": "node-sass --importer node_modules/node-sass-glob-importer/dist/cli.js assets/scss/index.scss docs/assets/css/index.css"
   },
   "repository": {
     "type": "git",
@@ -27,6 +30,8 @@
     "ejs": "^3.0.1",
     "express": "^4.17.1",
     "node-fetch": "^2.6.0",
+    "node-sass": "^4.14.1",
+    "node-sass-glob-importer": "^5.3.2",
     "npm-run-all": "^4.1.5",
     "rimraf": "^3.0.2",
     "csvtojson": "^2.0.10",
