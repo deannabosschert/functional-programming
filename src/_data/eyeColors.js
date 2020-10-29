@@ -1,6 +1,5 @@
 const CleanEyecolor = require('../lib/filters/clean-eyecolor.js')
 
-module.exports = async function() {
-  const eyeColor = await CleanEyecolor()
-  return eyeColor;
+module.exports = async () => {
+  return eyeColor = await CleanEyecolor()
 };
