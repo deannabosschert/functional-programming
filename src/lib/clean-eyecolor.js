@@ -1,28 +1,28 @@
 const questionnaire = require('../_data/Survey_Information_Design_clean-parsed.js')
 // all function + variable names will be refactored as they're unclear af right now (for the sake of testing/dev)
 
-async function CleanEyecolor(cleanedEyecolor) {
+async function CleanEyecolor() {
   try {
-    let eyeColors = getEyeColors(questionnaire)  // get all eyecolor-data
-    let cleanEyeColors = addHashtag(eyeColors)    // add hashtag and some other empty/dummy function in advance
-      .then(hashedEyecolors => addYeet(hashedEyecolors))
-      .then(yeetEyecolors => yeetEyecolors)
+    let eyeColors = getData(questionnaire)  // get all eyecolor-data
+    let cleanEyeColors = addHash(eyeColors)    // add hashtag and make everything uppercase
+      .then(withHash => toUpperCase(withHash))
+      .then(uppercase => uppercase)
     return cleanedEyecolor = await cleanEyeColors
   } catch (err) {
     console.error(err)
   }
-  resolve(cleanedEyecolor)
+  resolve()
 }
 
-function getEyeColors(questionnaire) {
-  return questionnaire.map(person => ({
+function getData(datasource) {
+  return datasource.map(person => ({
     eyeColor: person.oogKleur
   }))
 }
 
-function addHashtag(eyeColors, hashedEyecolors) {
+function addHash(data, withHash) {
   return new Promise((resolve, reject) => {
-    const hashedEyecolors = eyeColors.map((person) => {
+    const withHash = data.map((person) => {
       let eyeColor = person.eyeColor
       if (eyeColor.startsWith('#')) {
         return eyeColor
@@ -30,21 +30,32 @@ function addHashtag(eyeColors, hashedEyecolors) {
         return newEyecolor = '#'.concat(eyeColor);
       }
     })
-    resolve(hashedEyecolors)
+    resolve(withHash)
   })
 }
 
-function addYeet(hashedEyecolors, yeetEyecolors) { // dummy/template function for second filter, added in advance
+function toUpperCase(lowercase, uppercase) { // dummy/template function for second filter, added in advance
   return new Promise((resolve, reject) => {
-    const yeetEyecolors = hashedEyecolors.map((eyeColor) => {
-      if (eyeColor.startsWith('#D')) {
-        return newEyecolor = 'esketit'.concat(eyeColor);
-      } else {
-        return newEyecolor = 'kleur: '.concat(eyeColor);
-      }
+    const uppercase = lowercase.map((sentence) => {
+      return sentence.toUpperCase()
     })
-    resolve(yeetEyecolors)
+    resolve(uppercase)
   })
 }
+//
+//
+// function toUpperCase(hashedEyecolors, yeetEyecolors) { // dummy/template function for second filter, added in advance
+//   return new Promise((resolve, reject) => {
+//     const yeetEyecolors = hashedEyecolors.map((eyeColor) => {
+//       if (eyeColor.startsWith('#D')) {
+//         return newEyecolor = 'esketit'.concat(eyeColor);
+//       } else {
+//         return newEyecolor = 'kleur: '.concat(eyeColor);
+//       }
+//     })
+//     resolve(yeetEyecolors)
+//   })
+// }
+
 
 module.exports = CleanEyecolor
