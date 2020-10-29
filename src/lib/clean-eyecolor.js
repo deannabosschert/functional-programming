@@ -3,7 +3,7 @@ const questionnaire = require('../_data/Survey_Information_Design_clean-parsed.j
 
 async function CleanEyecolor(cleanedEyecolor) {
   try {
-    let eyeColors = await getEyeColors(questionnaire)  // get all eyecolor-data
+    let eyeColors = getEyeColors(questionnaire)  // get all eyecolor-data
     let cleanEyeColors = addHashtag(eyeColors)    // add hashtag and some other empty/dummy function in advance
       .then(hashedEyecolors => addYeet(hashedEyecolors))
       .then(yeetEyecolors => yeetEyecolors)
