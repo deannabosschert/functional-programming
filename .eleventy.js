@@ -6,7 +6,7 @@ module.exports = (eleventyConfig) => {
       input: 'src',
       data: '_data',
       includes: '_includes',
-      output: '_site'
+      output: 'docs'
     },
     templateFormats: ['html', 'njk'],
     htmlTemplateEngine: 'njk',
