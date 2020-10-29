@@ -2,6 +2,7 @@
 ## Assessment
 Create a data visualisation with d3 based on given data.
 Focus on the data cleaning beforehand.
+
 -->Alle teksten in het Nederlands behoren tot de concept/developmentfase, uiteindelijk zal de readme volledig in het Engels zijn. Zo kan ik concept VS eindproduct wat beter scheiden.<--
 
 # Auto’s in de stad
