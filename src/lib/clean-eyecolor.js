@@ -1,4 +1,4 @@
-const questionnaire = require('./Survey_Information_Design_clean-parsed.js')
+const questionnaire = require('../_data/Survey_Information_Design_clean-parsed.js')
 
 async function CleanEyecolor(cleanedEyecolor) {
   try {
