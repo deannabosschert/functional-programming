@@ -1,18 +1,13 @@
 const questionnaire = require('../_data/Survey_Information_Design_clean-parsed.js')
+// all function + variable names will be refactored as they're unclear af right now (for the sake of testing/dev)
 
 async function CleanEyecolor(cleanedEyecolor) {
   try {
-    // get all eyecolor-data
-    let eyeColors = await getEyeColors(questionnaire)
-    // add hashtag and some other empty/dummy function in advance
-    let cleanedEyeColors = addHashtag(eyeColors)
+    let eyeColors = await getEyeColors(questionnaire)  // get all eyecolor-data
+    let cleanEyeColors = addHashtag(eyeColors)    // add hashtag and some other empty/dummy function in advance
       .then(hashedEyecolors => addYeet(hashedEyecolors))
-      .then(function(yeetEyecolors) {
-        return yeetEyecolors
-      })
-
-    let cleanedEyecolor = await cleanedEyeColors
-    return cleanedEyecolor
+      .then(yeetEyecolors => yeetEyecolors)
+    return cleanedEyecolor = await cleanEyeColors
   } catch (err) {
     console.error(err)
   }
@@ -20,10 +15,9 @@ async function CleanEyecolor(cleanedEyecolor) {
 }
 
 function getEyeColors(questionnaire) {
-  const eyeColors = questionnaire.map(person => ({
+  return eyeColors = questionnaire.map(person => ({
     eyeColor: person.oogKleur
   }))
-  return eyeColors
 }
 
 function addHashtag(eyeColors, hashedEyecolors) {
@@ -33,23 +27,20 @@ function addHashtag(eyeColors, hashedEyecolors) {
       if (eyeColor.startsWith('#')) {
         return eyeColor
       } else {
-        const newEyecolor = '#'.concat(eyeColor);
-        return newEyecolor
+        return newEyecolor = '#'.concat(eyeColor);
       }
     })
     resolve(hashedEyecolors)
   })
 }
 
-function addYeet(hashedEyecolors, yeetEyecolors) { // dummy function for next cleansing
+function addYeet(hashedEyecolors, yeetEyecolors) { // dummy/template function for second filter, added in advance
   return new Promise((resolve, reject) => {
     const yeetEyecolors = hashedEyecolors.map((eyeColor) => {
       if (eyeColor.startsWith('#D')) {
-        const newEyecolor = 'esketit'.concat(eyeColor);
-        return newEyecolor
+        return newEyecolor = 'esketit'.concat(eyeColor);
       } else {
-        const newEyecolor = 'yeet'.concat(eyeColor);
-        return newEyecolor
+        return newEyecolor = 'kleur: '.concat(eyeColor);
       }
     })
     resolve(yeetEyecolors)
