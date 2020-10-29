@@ -5,12 +5,13 @@ title: Functional Programming
 <section>
   <article>
     <h2>Heading 1</h2>
-    <!-- hieronder render ik in een for-loop de oogkleuren, is een work-in-progress dus vandaar de lorem-ipsumteksten.-->
-    <ul>
-      <li>een</li>
-      <li>{{ eyeColors }}</li>
-      <li>drie</li>
-    </ul>
+    <ol>
+      {% for eyeColor in eyeColors %}
+      <li>{{ eyeColor }}</li>
+      {% else %}
+      <li>This would display if the 'eyeColors'-collection were empty</li>
+      {% endfor %}
+    </ol>
   </article>
   <article>
     <h2>Heading 2</h2>
