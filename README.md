@@ -7,7 +7,7 @@ Focus on the data cleaning beforehand.
 
 # Auto’s in de stad
 [![Netlify Status](https://api.netlify.com/api/v1/badges/eaf5a426-0c2d-4380-b88d-e4441f880600/deploy-status)](https://app.netlify.com/sites/functional-programming-2021/deploys) ... [link to deploy](https://functional-programming-2021.netlify.app/)
-![screenshot of website](https://paper-attachments.dropbox.com/s_32CDEAFA631B217EFA0891F586D7083AA233C4CE2AD042263B6C54D870A69D7E_1603883617505_image.png)
+![screenshot of website](https://github.com/deannabosschert/functional-programming/blob/trunk/docs/assets/img/screenshot_website.png)
 (deze screenshot klopt natuurlijk totaal niet met de uiteindelijke site en is gemaakt tijdens development/testing maar fungeert momenteel even als dummy ter opvulling)
 
 ## Parkeergelegenheden in coronatijd
