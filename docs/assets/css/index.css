@@ -322,10 +322,29 @@ section {
 }
 
 article {
+  display: flex;
+  flex-direction: column;
+  max-width: 80vw;
+  padding: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
 /* LAYOUT */
+.eyeColorList {
+  display: flex;
+  flex-direction: column;
+  flex: wrap;
+  max-width: 50vw;
+}
+
+.eyeColorList li {
+  padding: 1rem 0.5rem;
+  margin: 0.2rem;
+  background-color: lightgrey;
+  text-align: center;
+  font-weight: bold;
+}
+
 .backToTop {
   align-self: center;
   text-align: center;

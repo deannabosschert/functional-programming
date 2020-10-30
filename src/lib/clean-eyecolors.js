@@ -1,13 +1,12 @@
 const questionnaire = require('../_data/Survey_Information_Design_clean-parsed.js')
 // all function + variable names will be refactored as they're unclear af right now (for the sake of testing/dev)
 
-async function CleanEyecolor() {
+module.exports = async () => {
   try {
     return cleanEyeColors = await getData(questionnaire) // wait for data
       .then(data => removeWhitespace(data)) // remove whitespace
       .then(trimmed => addHash(trimmed)) // add hashtag
       .then(withHash => toUpperCase(withHash)) // make uppercase
-      // .then(uppercase => renderColors(uppercase))
   } catch (err) {
     console.error(err)
   }
@@ -27,10 +26,18 @@ function addHash(data, withHash) {
     const withHash = data.map((person) => {
       let eyeColor = person.eyeColor
       if (eyeColor.startsWith('#')) {
+        // let teken = eyeColor.charAt(1)
+        // console.log(teken)
         return {
           eyeColor: eyeColor
         }
-      } else {
+      }
+      // else if (eyeColor.charAt(1) != ('#')) {
+      //   return {
+      //     eyeColor: eyeColor
+      //   }
+      // }
+      else {
         const newEyecolor = '#'.concat(eyeColor)
         return {
           eyeColor: newEyecolor
@@ -65,11 +72,6 @@ function removeWhitespace(data, trimmed) { // remove excessive tabs at the start
   })
 }
 
-function renderColors() {
-
-}
-
-
 // function rgbtohex() {
 //
 // }
@@ -88,6 +90,3 @@ function renderColors() {
 //     resolve(yeetEyecolors)
 //   })
 // }
-
-
-module.exports = CleanEyecolor
