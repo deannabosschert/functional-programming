@@ -47,27 +47,21 @@ function addHash(data, withHash) {
 }
 
 function toUpperCase(lowercase, uppercase) { // make values uppercase
-  return new Promise((resolve, reject) => {
-    const uppercase = lowercase.map((item) => {
+    return lowercase.map((item) => {
       let uppercaseEyeColor = item.eyeColor.toUpperCase()
       return {
         eyeColor: uppercaseEyeColor
       }
     })
-    resolve(uppercase)
-  })
 }
 
-function removeWhitespace(data, trimmed) { // remove excessive tabs at the start or end of a value
-  return new Promise((resolve, reject) => {
-    const trimmed = data.map((person) => { // haal hier nog trimmed weg en return heel data.map
+function removeWhitespace(data) { // remove excessive tabs at the start or end of a value
+    return data.map((person) => { // haal hier nog trimmed weg en return heel data.map
       let trimmedEyeColor = person.eyeColor.trim()
       return {
         eyeColor: trimmedEyeColor
       }
     })
-    resolve(trimmed)
-  })
 }
 
 function wordToHex(data) {
