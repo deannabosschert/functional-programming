@@ -219,6 +219,7 @@ h1 {
   line-height: 1.8rem;
   margin-bottom: calc((1.2rem - 1.8rem) + 1.2rem);
   font-variant: small-caps;
+  width: 100%;
 }
 
 h2 {

@@ -81,6 +81,7 @@ h1 {
   line-height: $h1;
   margin-bottom: calc((#{$baseline} - #{$h1}) + #{$baseline});
   font-variant: small-caps;
+  width: 100%;
 }
 
 h2 {
