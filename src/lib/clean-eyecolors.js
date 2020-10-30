@@ -28,8 +28,7 @@ function getData(datasource, eyeColors) {
 }
 
 function addHash(data, withHash) {
-  return new Promise((resolve, reject) => {
-    const withHash = data.map((person) => {
+    return data.map((person) => {
       let eyeColor = person.eyeColor
       if (eyeColor.startsWith('#')) {
         return {
@@ -42,8 +41,6 @@ function addHash(data, withHash) {
         }
       }
     })
-    resolve(withHash)
-  })
 }
 
 function toUpperCase(lowercase, uppercase) { // make values uppercase
