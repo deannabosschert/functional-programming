@@ -116,7 +116,8 @@ function rgbToHex(data, cleanHex) {
   })
 }
 
-// #rgb(139.69,19)
+// #rgb(139.69,19) #8B4513
+
 
 function matchRGB(rgb) {
   const r = rgb.substring(4, 7)
@@ -132,8 +133,10 @@ function matchRGB(rgb) {
 }
 
 function calculateR(input) {
-  console.log(input)
-// (input/16)
+  const digits = (input/16)
+  console.log(digits)
+  // const firstDigit = ietsvanregexomdedecimaltepakken
+  // const secondDigit = ietsvanregexomdedecimaltepakken
   return input
 }
 
