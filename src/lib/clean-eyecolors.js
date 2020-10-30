@@ -102,7 +102,7 @@ function rgbToHex(data, cleanHex) {
       const matches = eyeColor.substring(1, 4).match(/rgb+/g)
       if (matches == 'rgb' || matches == 'RGB') {
         const hex = matchRGB(eyeColor.replace(/#/gi, ''))
-        console.log(hex)
+        // console.log(hex)
         return {
           eyeColor: 'rgbkleurtjes'
         }
@@ -123,21 +123,25 @@ function matchRGB(rgb) {
   const r = rgb.substring(4, 7)
   const g = rgb.substring(8, 10)
   const b = rgb.substring(11, 13)
-  console.log('r: ' + r)
-  console.log('g: ' + g)
-  console.log('b: ' + b)
+  console.log(`rgb ${r}, ${g}, ${b}`)
+  console.log(r)
+  console.log(g)
+  console.log(b)
+
+  // const hex = "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1)
+  // console.log(hex)
 
 
-  const hex = 'hex: ' + calculateR(r)
-  return hex
-}
+  function rgbToHex(r, g, b) {
+    console.log(r)
+    return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+  }
 
-function calculateR(input) {
-  const digits = (input/16)
-  console.log(digits)
-  // const firstDigit = ietsvanregexomdedecimaltepakken
-  // const secondDigit = ietsvanregexomdedecimaltepakken
-  return input
+  console.log(rgbToHex(r, g, b)); // #0033ff
+
+
+
+  return rgb
 }
 
 
