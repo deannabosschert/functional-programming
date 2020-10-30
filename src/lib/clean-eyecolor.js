@@ -3,19 +3,23 @@ const questionnaire = require('../_data/Survey_Information_Design_clean-parsed.j
 
 async function CleanEyecolor() {
   try {
-    let eyeColors = getData(questionnaire)  // get all eyecolor-data
-    return cleanEyeColors = await addHash(eyeColors)
-      .then(withHash => toUpperCase(withHash)) // add hashtag
-      .then(uppercase => uppercase) //  make everything uppercase
+    return cleanEyeColors = await getData(questionnaire) // wait for data
+      .then(data => removeWhitespace(data)) // remove whitespace
+      .then(trimmed => addHash(trimmed)) // add hashtag
+      .then(withHash => toUpperCase(withHash)) // make uppercase
+      // .then(uppercase => renderColors(uppercase))
   } catch (err) {
     console.error(err)
   }
 }
 
-function getData(datasource) {
-  return datasource.map(person => ({
-    eyeColor: person.oogKleur
-  }))
+function getData(datasource, eyeColors) {
+  return new Promise((resolve, reject) => {
+    const eyeColors = datasource.map(person => ({
+      eyeColor: person.oogKleur
+    }))
+    resolve(eyeColors)
+  })
 }
 
 function addHash(data, withHash) {
@@ -23,30 +27,54 @@ function addHash(data, withHash) {
     const withHash = data.map((person) => {
       let eyeColor = person.eyeColor
       if (eyeColor.startsWith('#')) {
-        return eyeColor
+        return {
+          eyeColor: eyeColor
+        }
       } else {
-        return eyeColor
-         // newEyecolor = '#'.concat(eyeColor);
+        const newEyecolor = '#'.concat(eyeColor)
+        return {
+          eyeColor: newEyecolor
+        }
       }
     })
     resolve(withHash)
   })
 }
 
-function toUpperCase(lowercase, uppercase) { // dummy/template function for second filter, added in advance
+function toUpperCase(lowercase, uppercase) { // make values uppercase
   return new Promise((resolve, reject) => {
-    const uppercase = lowercase.map((sentence) => {
-      const trimmed = removeWhitespace(sentence)
-      return trimmed.toUpperCase()
+    const uppercase = lowercase.map((item) => {
+      let uppercaseEyeColor = item.eyeColor.toUpperCase()
+      return {
+        eyeColor: uppercaseEyeColor
+      }
     })
     resolve(uppercase)
   })
 }
 
-function removeWhitespace(data) {
-  return data.trim()
+function removeWhitespace(data, trimmed) { // remove excessive tabs at the start or end of a value
+  return new Promise((resolve, reject) => {
+    const trimmed = data.map((person) => { // haal hier nog trimmed weg en return heel data.map
+      let trimmedEyeColor = person.eyeColor.trim()
+      return {
+        eyeColor: trimmedEyeColor
+      }
+    })
+    resolve(trimmed)
+  })
 }
+
+function renderColors() {
+
+}
+
+
+// function rgbtohex() {
 //
+// }
+
+
 //
 // function toUpperCase(hashedEyecolors, yeetEyecolors) { // dummy/template function for second filter, added in advance
 //   return new Promise((resolve, reject) => {
