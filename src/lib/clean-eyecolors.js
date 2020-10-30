@@ -31,9 +31,7 @@ function getData(datasource, eyeColors) { // get data from questionnaire file
 function removeWhitespace(data) { // remove excessive tabs at the start or end of a value
   return data.map((person) => { // haal hier nog trimmed weg en return heel data.map
     let trimmedEyeColor = person.eyeColor.trim()
-    return {
-      eyeColor: trimmedEyeColor
-    }
+    return {eyeColor: trimmedEyeColor}
   })
 }
 
@@ -41,14 +39,10 @@ function addHash(data, withHash) { // add hash to answers that don't start with 
   return data.map((person) => {
     let eyeColor = person.eyeColor
     if (eyeColor.startsWith('#')) {
-      return {
-        eyeColor: eyeColor
-      }
+      return {eyeColor: eyeColor}
     } else {
       const newEyecolor = '#'.concat(eyeColor)
-      return {
-        eyeColor: newEyecolor
-      }
+      return {eyeColor: newEyecolor}
     }
   })
 }
@@ -61,18 +55,12 @@ function wordToHex(data) {
       let word = eyeColor.replace(/#/gi, '').toLowerCase()
       for (color of htmlcolors) {
         if (color.NL == word || color.EN == word) {
-          return {
-            eyeColor: color.HEX
-          }
+          return {eyeColor: color.HEX}
         }
       }
-      return {
-        eyeColor: eyeColor
-      }
+      return {eyeColor: eyeColor}
     } else if (match == true) {
-      return {
-        eyeColor: eyeColor
-      }
+      return {eyeColor: eyeColor}
     }
   })
 }
@@ -83,13 +71,9 @@ function rgbToHex(data) {
     const matches = eyeColor.substring(1, 4).match(/rgb+/g)
     if (matches == 'rgb' || matches == 'RGB') {
       const hexColor = matchRGB(eyeColor)
-      return {
-        eyeColor: hexColor
-      }
+      return {eyeColor: hexColor}
     } else {
-      return {
-        eyeColor: eyeColor
-      }
+      return {eyeColor: eyeColor}
     }
   })
 }
@@ -102,8 +86,6 @@ function matchRGB(rgb) {
 function toUpperCase(lowercase, uppercase) { // make values uppercase
   return lowercase.map((item) => {
     let uppercaseEyeColor = item.eyeColor.toUpperCase()
-    return {
-      eyeColor: uppercaseEyeColor
-    }
+    return {eyeColor: uppercaseEyeColor}
   })
 }
