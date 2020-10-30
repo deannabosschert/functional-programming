@@ -1,5 +1,7 @@
 const questionnaire = require('../_data/Survey_Information_Design_clean-parsed.js')
 const htmlcolors = require('../_data/html-kleurcodes.js')
+const rgbHex = require('rgb-hex');
+
 // all function + variable names will be refactored as they're unclear af right now (for the sake of testing/dev)
 // I should refactor everything in a way that I map over the values at first, then filter and reduce instead of repeating to map
 
@@ -101,10 +103,10 @@ function rgbToHex(data, cleanHex) {
       let eyeColor = person.eyeColor
       const matches = eyeColor.substring(1, 4).match(/rgb+/g)
       if (matches == 'rgb' || matches == 'RGB') {
-        const hex = matchRGB(eyeColor.replace(/#/gi, ''))
-        // console.log(hex)
+        const hexColor = matchRGB(eyeColor)
+        console.log(hexColor)
         return {
-          eyeColor: 'rgbkleurtjes'
+          eyeColor: hexColor
         }
       } else {
         return {
@@ -116,32 +118,9 @@ function rgbToHex(data, cleanHex) {
   })
 }
 
-// #rgb(139.69,19) #8B4513
-
-
 function matchRGB(rgb) {
-  const r = rgb.substring(4, 7)
-  const g = rgb.substring(8, 10)
-  const b = rgb.substring(11, 13)
-  console.log(`rgb ${r}, ${g}, ${b}`)
-  console.log(r)
-  console.log(g)
-  console.log(b)
-
-  // const hex = "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1)
-  // console.log(hex)
-
-
-  function rgbToHex(r, g, b) {
-    console.log(r)
-    return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
-  }
-
-  console.log(rgbToHex(r, g, b)); // #0033ff
-
-
-
-  return rgb
+  const cleanRGB = rgb.replace(/\./gi, ',').substring(1)
+  return `#${rgbHex(cleanRGB)}`
 }
 
 
