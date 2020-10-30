@@ -97,14 +97,12 @@ function wordToHex(data, converted) {
   })
 }
 
-function rgbToHex(data, cleanHex) {
-  return new Promise((resolve, reject) => {
-    const cleanHex = data.map((person) => {
+function rgbToHex(data) {
+    return data.map((person) => {
       let eyeColor = person.eyeColor
       const matches = eyeColor.substring(1, 4).match(/rgb+/g)
       if (matches == 'rgb' || matches == 'RGB') {
         const hexColor = matchRGB(eyeColor)
-        console.log(hexColor)
         return {
           eyeColor: hexColor
         }
@@ -114,8 +112,6 @@ function rgbToHex(data, cleanHex) {
         }
       }
     })
-    resolve(cleanHex)
-  })
 }
 
 function matchRGB(rgb) {
