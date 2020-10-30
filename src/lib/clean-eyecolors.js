@@ -4,6 +4,7 @@ const rgbHex = require('rgb-hex')
 
 // all function + variable names will be refactored as they're unclear af right now (for the sake of testing/dev)
 // I should refactor everything in a way that I map over the values at first, then filter and reduce instead of repeating to map
+// I should also swap the adding of the hash and the converting..
 
 module.exports = async () => {
   try {
@@ -27,6 +28,15 @@ function getData(datasource, eyeColors) { // get data from questionnaire file
   })
 }
 
+function removeWhitespace(data) { // remove excessive tabs at the start or end of a value
+  return data.map((person) => { // haal hier nog trimmed weg en return heel data.map
+    let trimmedEyeColor = person.eyeColor.trim()
+    return {
+      eyeColor: trimmedEyeColor
+    }
+  })
+}
+
 function addHash(data, withHash) { // add hash to answers that don't start with a hash yet
   return data.map((person) => {
     let eyeColor = person.eyeColor
@@ -39,24 +49,6 @@ function addHash(data, withHash) { // add hash to answers that don't start with 
       return {
         eyeColor: newEyecolor
       }
-    }
-  })
-}
-
-function toUpperCase(lowercase, uppercase) { // make values uppercase
-  return lowercase.map((item) => {
-    let uppercaseEyeColor = item.eyeColor.toUpperCase()
-    return {
-      eyeColor: uppercaseEyeColor
-    }
-  })
-}
-
-function removeWhitespace(data) { // remove excessive tabs at the start or end of a value
-  return data.map((person) => { // haal hier nog trimmed weg en return heel data.map
-    let trimmedEyeColor = person.eyeColor.trim()
-    return {
-      eyeColor: trimmedEyeColor
     }
   })
 }
@@ -83,7 +75,6 @@ function wordToHex(data) {
       }
     }
   })
-
 }
 
 function rgbToHex(data) {
@@ -106,4 +97,13 @@ function rgbToHex(data) {
 function matchRGB(rgb) {
   const cleanRGB = rgb.replace(/\./gi, ',').substring(1)
   return `#${rgbHex(cleanRGB)}`
+}
+
+function toUpperCase(lowercase, uppercase) { // make values uppercase
+  return lowercase.map((item) => {
+    let uppercaseEyeColor = item.eyeColor.toUpperCase()
+    return {
+      eyeColor: uppercaseEyeColor
+    }
+  })
 }
