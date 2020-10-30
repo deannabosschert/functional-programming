@@ -5,6 +5,7 @@ title: Functional Programming
 <section>
   <article>
     <h2>Eyecolors</h2>
+    <p>Cleaned by removing whitespace, adding a hashtag, matching text-inputs to the correct hex, converting rgb-inputs to hex and making everything uppercase. </p>
     <ul class="eyeColorList">
       {% for eyeColor in eyeColors %}
       {{ eyeColor.eyeColor | safe }}
@@ -13,8 +14,8 @@ title: Functional Programming
       {% endfor %}
     </ul>
   </article>
-  <article>
+  <!-- <article>
     <h2>Heading 2</h2>
     <p>dummytekst</p>
-  </article>
+  </article> -->
 </section>
