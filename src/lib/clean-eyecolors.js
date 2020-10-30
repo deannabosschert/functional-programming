@@ -47,7 +47,7 @@ function addHash(data, withHash) { // add hash to answers that don't start with 
   })
 }
 
-function wordToHex(data) {
+function wordToHex(data) { // look for the matching hex in the htmlcolors-file
   return data.map((person) => {
     let eyeColor = person.eyeColor
     const match = /^#(?:[0-9a-fA-F]{3}){1,2}$/i.test(eyeColor) // source for regex: https://stackoverflow.com/questions/1636350/how-to-identify-a-given-string-is-hex-color-format
@@ -65,7 +65,7 @@ function wordToHex(data) {
   })
 }
 
-function rgbToHex(data) {
+function rgbToHex(data) { // check for rgb answers, then convert them to hex
   return data.map((person) => {
     let eyeColor = person.eyeColor
     const matches = eyeColor.substring(1, 4).match(/rgb+/g)
@@ -78,12 +78,12 @@ function rgbToHex(data) {
   })
 }
 
-function matchRGB(rgb) {
+function matchRGB(rgb) { // convert rgb answers to hex, using the rgbHex-package
   const cleanRGB = rgb.replace(/\./gi, ',').substring(1)
   return `#${rgbHex(cleanRGB)}`
 }
 
-function toUpperCase(lowercase, uppercase) { // make values uppercase
+function toUpperCase(lowercase, uppercase) { // convert all values to uppercase
   return lowercase.map((item) => {
     let uppercaseEyeColor = item.eyeColor.toUpperCase()
     return {eyeColor: uppercaseEyeColor}
