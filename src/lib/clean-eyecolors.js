@@ -1,6 +1,7 @@
 const questionnaire = require('../_data/Survey_Information_Design_clean-parsed.js')
 const htmlcolors = require('../_data/html-kleurcodes.js')
 // all function + variable names will be refactored as they're unclear af right now (for the sake of testing/dev)
+// I should refactor everything in a way that I map over the values at first, then filter and reduce instead of repeating to map
 
 module.exports = async () => {
   try {
@@ -8,7 +9,7 @@ module.exports = async () => {
       .then(data => removeWhitespace(data)) // remove whitespace
       .then(trimmed => addHash(trimmed)) // add hashtag
       .then(withHash => wordToHex(withHash)) // convert to hex
-      // .then(allColors => rgbToHex(allColors)) // convert to hex
+      .then(allColors => rgbToHex(allColors)) // convert to hex
       .then(cleanHEX => toUpperCase(cleanHEX)) // make uppercase
   } catch (err) {
     console.error(err)
@@ -67,26 +68,15 @@ function removeWhitespace(data, trimmed) { // remove excessive tabs at the start
   })
 }
 
-// function rgbtohex() {
-//
-// }
-
 function wordToHex(data, converted) {
   return new Promise((resolve, reject) => {
     const converted = data.map((person) => {
       let eyeColor = person.eyeColor
-      const match = /^#(?:[0-9a-fA-F]{3}){1,2}$/i.test(person.eyeColor) // source for regex: https://stackoverflow.com/questions/1636350/how-to-identify-a-given-string-is-hex-color-format
-
+      const match = /^#(?:[0-9a-fA-F]{3}){1,2}$/i.test(eyeColor) // source for regex: https://stackoverflow.com/questions/1636350/how-to-identify-a-given-string-is-hex-color-format
       if (match == false) {
         let word = eyeColor.replace(/#/gi, '').toLowerCase()
-        console.log('woord is: ' + word)
         for (color of htmlcolors) {
-          if (color.NL == word) {
-            return {
-              eyeColor: color.HEX
-            }
-          }
-          else if (color.EN == word) {
+          if (color.NL == word || color.EN == word) {
             return {
               eyeColor: color.HEX
             }
@@ -95,55 +85,57 @@ function wordToHex(data, converted) {
         return {
           eyeColor: eyeColor
         }
-
-        // for (word in htmlcolors.NL) {
-        //   if (word = color.NL) {
-        //     // console.log('woord: ' + word)
-        //     // console.log('kleur: ' + color.NL)
-        //     // console.log('engels: ' + color.EN)
-        //     console.log('hex: ' + color.HEX)
-        //     return {
-        //       eyeColor: color.HEX
-        //     }
-        //   } else {
-        //     console.log('zit er niet in')
-        //     const teruggeven = 'zit er niet in' + eyeColor
-        //     return {
-        //       eyeColor: teruggeven
-        //     }
-        //   }
-        // }
-        // })
-
       } else if (match == true) {
-        // console.log('klopt wel')
         return {
           eyeColor: eyeColor
         }
-      } else {
-        console.log('idk nothing left')
       }
-
-
-      // if (matches == null) {
-      //   // console.log(eyeColor)
-      //   // console.log('geen nummer') // return
-      //   return {
-      //     eyeColor: eyeColor
-      //   }
-      // } else {
-
-      // }
     })
     resolve(converted)
   })
 }
 
-function rgbToHex() {
-  // let matches = teken.match(/rgb+/g)
-
+function rgbToHex(data, cleanHex) {
+  return new Promise((resolve, reject) => {
+    const cleanHex = data.map((person) => {
+      let eyeColor = person.eyeColor
+      const matches = eyeColor.substring(1, 4).match(/rgb+/g)
+      if (matches == 'rgb' || matches == 'RGB') {
+        const hex = matchRGB(eyeColor.replace(/#/gi, ''))
+        console.log(hex)
+        return {
+          eyeColor: 'rgbkleurtjes'
+        }
+      } else {
+        return {
+          eyeColor: eyeColor
+        }
+      }
+    })
+    resolve(cleanHex)
+  })
 }
 
+// #rgb(139.69,19)
+
+function matchRGB(rgb) {
+  const r = rgb.substring(4, 7)
+  const g = rgb.substring(8, 10)
+  const b = rgb.substring(11, 13)
+  console.log('r: ' + r)
+  console.log('g: ' + g)
+  console.log('b: ' + b)
+
+
+  const hex = 'hex: ' + calculateR(r)
+  return hex
+}
+
+function calculateR(input) {
+  console.log(input)
+// (input/16)
+  return input
+}
 
 
 //
@@ -151,9 +143,9 @@ function rgbToHex() {
 //   return new Promise((resolve, reject) => {
 //     const yeetEyecolors = hashedEyecolors.map((eyeColor) => {
 //       if (eyeColor.startsWith('#D')) {
-//         return newEyecolor = 'esketit'.concat(eyeColor);
+//         return newEyecolor = 'esketit'.concat(eyeColor)
 //       } else {
-//         return newEyecolor = 'kleur: '.concat(eyeColor);
+//         return newEyecolor = 'kleur: '.concat(eyeColor)
 //       }
 //     })
 //     resolve(yeetEyecolors)
