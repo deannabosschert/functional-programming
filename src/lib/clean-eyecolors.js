@@ -6,7 +6,8 @@ module.exports = async () => {
     return cleanEyeColors = await getData(questionnaire) // wait for data
       .then(data => removeWhitespace(data)) // remove whitespace
       .then(trimmed => addHash(trimmed)) // add hashtag
-      .then(withHash => toUpperCase(withHash)) // make uppercase
+      .then(withHash => wordToHex(withHash)) // convert to hex
+      .then(cleanHEX => toUpperCase(cleanHEX)) // make uppercase
   } catch (err) {
     console.error(err)
   }
@@ -26,18 +27,10 @@ function addHash(data, withHash) {
     const withHash = data.map((person) => {
       let eyeColor = person.eyeColor
       if (eyeColor.startsWith('#')) {
-        // let teken = eyeColor.charAt(1)
-        // console.log(teken)
         return {
           eyeColor: eyeColor
         }
-      }
-      // else if (eyeColor.charAt(1) != ('#')) {
-      //   return {
-      //     eyeColor: eyeColor
-      //   }
-      // }
-      else {
+      } else {
         const newEyecolor = '#'.concat(eyeColor)
         return {
           eyeColor: newEyecolor
@@ -75,6 +68,35 @@ function removeWhitespace(data, trimmed) { // remove excessive tabs at the start
 // function rgbtohex() {
 //
 // }
+
+function wordToHex(data, converted) {
+  return new Promise((resolve, reject) => {
+    const converted = data.map((person) => {
+      let eyeColor = person.eyeColor
+      // let teken = eyeColor.charAt(0).valueOf()
+      // let matches = teken.match(/\d+/g)
+      const match = /^#(?:[0-9a-fA-F]{3}){1,2}$/i.test(eyeColor)
+      if (match == false){
+        console.log(eyeColor)
+
+      } // source for regex: https://stackoverflow.com/questions/1636350/how-to-identify-a-given-string-is-hex-color-format
+
+      // if (matches == null) {
+      //   // console.log(eyeColor)
+      //   // console.log('geen nummer') // return
+      //   return {
+      //     eyeColor: eyeColor
+      //   }
+      // } else {
+        return {
+          eyeColor: eyeColor
+        }
+      // }
+    })
+    resolve(converted)
+  })
+}
+
 
 
 //
