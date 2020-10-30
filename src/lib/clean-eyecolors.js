@@ -70,9 +70,8 @@ function removeWhitespace(data, trimmed) { // remove excessive tabs at the start
   })
 }
 
-function wordToHex(data, converted) {
-  return new Promise((resolve, reject) => {
-    const converted = data.map((person) => {
+function wordToHex(data) {
+    return data.map((person) => {
       let eyeColor = person.eyeColor
       const match = /^#(?:[0-9a-fA-F]{3}){1,2}$/i.test(eyeColor) // source for regex: https://stackoverflow.com/questions/1636350/how-to-identify-a-given-string-is-hex-color-format
       if (match == false) {
@@ -93,8 +92,7 @@ function wordToHex(data, converted) {
         }
       }
     })
-    resolve(converted)
-  })
+
 }
 
 function rgbToHex(data) {
