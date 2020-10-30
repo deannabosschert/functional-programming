@@ -116,18 +116,3 @@ function matchRGB(rgb) {
   const cleanRGB = rgb.replace(/\./gi, ',').substring(1)
   return `#${rgbHex(cleanRGB)}`
 }
-
-
-//
-// function toUpperCase(hashedEyecolors, yeetEyecolors) { // dummy/template function for second filter, added in advance
-//   return new Promise((resolve, reject) => {
-//     const yeetEyecolors = hashedEyecolors.map((eyeColor) => {
-//       if (eyeColor.startsWith('#D')) {
-//         return newEyecolor = 'esketit'.concat(eyeColor)
-//       } else {
-//         return newEyecolor = 'kleur: '.concat(eyeColor)
-//       }
-//     })
-//     resolve(yeetEyecolors)
-//   })
-// }
