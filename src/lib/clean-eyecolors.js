@@ -8,6 +8,7 @@ module.exports = async () => {
       .then(data => removeWhitespace(data)) // remove whitespace
       .then(trimmed => addHash(trimmed)) // add hashtag
       .then(withHash => wordToHex(withHash)) // convert to hex
+      // .then(allColors => rgbToHex(allColors)) // convert to hex
       .then(cleanHEX => toUpperCase(cleanHEX)) // make uppercase
   } catch (err) {
     console.error(err)
@@ -72,24 +73,23 @@ function removeWhitespace(data, trimmed) { // remove excessive tabs at the start
 
 function wordToHex(data, converted) {
   return new Promise((resolve, reject) => {
-    // const kleuren = htmlcolors[0].NL
-    // console.log(kleuren)
-
     const converted = data.map((person) => {
       let eyeColor = person.eyeColor
       const match = /^#(?:[0-9a-fA-F]{3}){1,2}$/i.test(person.eyeColor) // source for regex: https://stackoverflow.com/questions/1636350/how-to-identify-a-given-string-is-hex-color-format
-      // let teken = eyeColor.charAt(0).valueOf()
-      // let matches = teken.match(/\d+/g)
 
       if (match == false) {
         let word = eyeColor.replace(/#/gi, '').toLowerCase()
-        console.log('word' + word)
-        // const matchie = woorden.map((word) => {
+        console.log('woord is: ' + word)
         for (color of htmlcolors) {
-          if (word == color.naam) {
-            console.log('yeeeet')
-            console.log(color.NL)
-            // return color.NL
+          if (color.NL == word) {
+            return {
+              eyeColor: color.HEX
+            }
+          }
+          else if (color.EN == word) {
+            return {
+              eyeColor: color.HEX
+            }
           }
         }
         return {
@@ -116,7 +116,7 @@ function wordToHex(data, converted) {
         // })
 
       } else if (match == true) {
-        console.log('klopt wel')
+        // console.log('klopt wel')
         return {
           eyeColor: eyeColor
         }
@@ -137,6 +137,11 @@ function wordToHex(data, converted) {
     })
     resolve(converted)
   })
+}
+
+function rgbToHex() {
+  // let matches = teken.match(/rgb+/g)
+
 }
 
 
