@@ -324,25 +324,33 @@ section {
 article {
   display: flex;
   flex-direction: column;
-  max-width: 80vw;
-  padding: 0.5rem;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 0.5rem;
+}
+
+p {
+  max-width: 80%;
+  text-align: center;
 }
 
 /* LAYOUT */
 .eyeColorList {
   display: flex;
-  flex-direction: column;
-  flex: wrap;
-  max-width: 50vw;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 80vw;
 }
 
 .eyeColorList li {
-  padding: 1rem 0.5rem;
+  padding: 1.2rem 1rem;
   margin: 0.2rem;
-  background-color: lightgrey;
+  width: 4.5rem;
   text-align: center;
   font-weight: bold;
+  border-radius: 5px;
+  color: white;
 }
 
 .backToTop {
