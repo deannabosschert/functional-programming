@@ -7,7 +7,7 @@ title: Functional Programming
     <h2>Heading 1</h2>
     <ol>
       {% for eyeColor in eyeColors %}
-      <li>{{ eyeColor }}</li>
+      <li>{{ eyeColor.eyeColor }}</li>
       {% else %}
       <li>This would display if the 'eyeColors'-collection were empty</li>
       {% endfor %}
