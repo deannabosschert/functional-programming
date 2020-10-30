@@ -13,10 +13,15 @@ body {
 
 header {
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 nav {
   margin-bottom: 1rem;
+  width: 22rem;
 }
 
 nav ul {
@@ -76,6 +81,18 @@ p {
   max-width: 80%;
   text-align: center;
 }
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+footer p {
+  width: 100%;
+}
+
 /* LAYOUT */
 .eyeColorList {
   display: flex;

@@ -54,7 +54,7 @@ body {
   margin: 0 auto;
   background-image: linear-gradient(rgba(200, 50, 50, .25) 1px, transparent 1px);
   background-size: 1px $baseline;
-  width: 22rem;
+  // width: 22rem;
 }
 
 p {
@@ -122,4 +122,8 @@ p {
 a {
   text-decoration: none;
   font-size: $p;
+}
+
+footer p {
+  font-size: $footer;
 }
