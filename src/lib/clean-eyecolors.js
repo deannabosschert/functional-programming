@@ -8,7 +8,7 @@ const rgbHex = require('rgb-hex')
 
 module.exports = async () => {
   try {
-    return cleanEyeColors = await getData(questionnaire) // wait for data
+    return cleanColors = await getData(questionnaire) // wait for data
       .then(data => removeWhitespace(data)) // remove whitespace
       .then(trimmed => addHash(trimmed)) // add hashtag
       .then(withHash => wordToHex(withHash)) // convert text to hex
@@ -19,12 +19,12 @@ module.exports = async () => {
   }
 }
 
-function getData(datasource, eyeColors) { // get data from questionnaire file
+function getData(datasource, colors) { // get data from questionnaire file
   return new Promise((resolve, reject) => {
-    const eyeColors = datasource.map(person => ({
+    const colors = datasource.map(person => ({
       eyeColor: person.oogKleur
     }))
-    resolve(eyeColors)
+    resolve(colors)
   })
 }
 
