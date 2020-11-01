@@ -1,8 +1,8 @@
 const htmlcolors = require('../../_data/html-kleurcodes.js')
 
 module.exports = function wordToHex(data) { // look for the matching hex in the htmlcolors-file
-  return data.map((person) => {
-    let eyeColor = person.eyeColor
+  return data.map((item) => {
+    let eyeColor = item.eyeColor
     const match = /^#(?:[0-9a-fA-F]{3}){1,2}$/i.test(eyeColor) // source for regex: https://stackoverflow.com/questions/1636350/how-to-identify-a-given-string-is-hex-color-format
     if (match == false) {
       let word = eyeColor.replace(/#/gi, '').toLowerCase()
