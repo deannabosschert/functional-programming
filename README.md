@@ -96,8 +96,10 @@ For more ideas, see the [Wiki page about my concept](https://github.com/deannabo
 - [x] Render data via ejs on screen
 - [x] Refactor: ejs to njk
 - [x] Render data via njk
-- [ ] Render data correctly
-- [ ] Add cleaning-functions to /lib
+- [x] Render data correctly
+- [x] Add cleaning-functions to /lib
+- [ ] Add another cleaning function to /lib
+- [ ] See project board
 - [ ] Fetch data from API
 
 ## 📋 Concept
