@@ -389,6 +389,11 @@ module.exports = HTMLkleurcodes = [
     "EN": "yellowgreen",
     "NL": "geelgroen"
   },
+  {  "Kleurgroep": "Groene kleuren",
+    "HEX": "#4b5320",
+    "EN": "armygreen",
+    "NL": "legergroen"
+  },
   {
     "Kleurgroep": "Groene kleuren",
     "HEX": "#32CD32",

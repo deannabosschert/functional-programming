@@ -1,14 +1,12 @@
 const rgbHex = require('rgb-hex')
 
-module.exports = function rgbToHex(data) { // check for rgb answers, then convert them to hex
-  return data.map((person) => {
-    let eyeColor = person.eyeColor
-    const matches = eyeColor.substring(1, 4).match(/rgb+/g)
+module.exports = function rgbToHex(data, variable) { // check for rgb answers, then convert them to hex
+  return data.map((item) => {
+    const matches = item[variable].substring(1, 4).match(/rgb+/g) // check if the string (without the hash) has 'rgb' in it
     if (matches == 'rgb' || matches == 'RGB') {
-      const hexColor = matchRGB(eyeColor)
-      return {eyeColor: hexColor}
+      return {[variable]: matchRGB(item[variable])}
     } else {
-      return {eyeColor: eyeColor}
+      return {[variable]: item[variable]}
     }
   })
 }
