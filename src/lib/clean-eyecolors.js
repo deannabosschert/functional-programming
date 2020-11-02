@@ -14,7 +14,7 @@ module.exports = async () => {
     return cleanColors = await getData(questionnaire, 'eyeColor') // wait for data
       .then(data => removeWhitespace(data, 'eyeColor')) // remove whitespace
       .then(trimmed => addHash(trimmed, 'eyeColor')) // add hashtag
-      .then(withHash => wordToHex(withHash)) // convert text to hex
+      .then(withHash => wordToHex(withHash, 'eyeColor')) // convert text to hex
       .then(allColors => rgbToHex(allColors, 'eyeColor')) // convert rgb to hex
       .then(cleanHEX => toUpperCase(cleanHEX, 'eyeColor')) // make uppercase
   } catch (err) {
