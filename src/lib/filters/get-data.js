@@ -1,7 +1,7 @@
-module.exports = function getData(datasource, colors) { // get data from questionnaire file
+module.exports = function getData(datasource, variable) { // get data from questionnaire file
   return new Promise((resolve, reject) => {
     const colors = datasource.map(item => ({
-      eyeColor: item.oogKleur
+      [variable]: item.oogKleur
     }))
     resolve(colors)
   })
