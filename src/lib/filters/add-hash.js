@@ -1,11 +1,9 @@
-module.exports = function addHash(data, withHash) { // add hash to answers that don't start with a hash yet
+module.exports = function addHash(data, variable) { // add hash to answers that don't start with a hash yet
   return data.map((item) => {
-    let eyeColor = item.eyeColor
-    if (eyeColor.startsWith('#')) {
-      return {eyeColor: eyeColor}
+    if (item[variable].startsWith('#')) {
+      return {[variable]: item[variable]}
     } else {
-      const newEyecolor = '#'.concat(eyeColor)
-      return {eyeColor: newEyecolor}
+      return {[variable]: '#'.concat(item[variable])}
     }
   })
 }
