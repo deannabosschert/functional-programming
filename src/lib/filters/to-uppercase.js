@@ -1,6 +1,6 @@
-module.exports = function toUpperCase(lowercase, uppercase) { // convert all values to uppercase
-  return lowercase.map((item) => {
-    let uppercaseEyeColor = item.eyeColor.toUpperCase()
-    return {eyeColor: uppercaseEyeColor}
+module.exports = function toUpperCase(data, variable) { // convert all values to uppercase
+  return data.map((item) => {
+    let uppercase = item[variable].toUpperCase()
+    return {[variable]: uppercase}
   })
 }

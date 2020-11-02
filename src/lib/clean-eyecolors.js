@@ -18,7 +18,7 @@ module.exports = async () => {
       .then(trimmed => addHash(trimmed)) // add hashtag
       .then(withHash => wordToHex(withHash)) // convert text to hex
       .then(allColors => rgbToHex(allColors)) // convert rgb to hex
-      .then(cleanHEX => toUpperCase(cleanHEX)) // make uppercase
+      .then(cleanHEX => toUpperCase(cleanHEX, 'eyeColor')) // make uppercase
   } catch (err) {
     console.error(err)
   }
