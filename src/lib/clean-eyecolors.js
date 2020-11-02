@@ -14,7 +14,7 @@ const rgbToHex = require('./filters/rgb-to-hex.js')
 module.exports = async () => {
   try {
     return cleanColors = await getData(questionnaire) // wait for data
-      .then(data => removeWhitespace(data)) // remove whitespace
+      .then(data => removeWhitespace(data, 'eyeColor')) // remove whitespace
       .then(trimmed => addHash(trimmed)) // add hashtag
       .then(withHash => wordToHex(withHash)) // convert text to hex
       .then(allColors => rgbToHex(allColors)) // convert rgb to hex
