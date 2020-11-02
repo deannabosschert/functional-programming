@@ -9,14 +9,14 @@ const rgbToHex = require('./filters/rgb-to-hex.js')
 // I should refactor everything in a way that I map over the values at first, then filter and reduce instead of repeating to map
 // I should also swap the adding of the hash and the converting..
 
-module.exports = async () => {
+module.exports = async (variable) => {
   try {
-    return cleanColors = await getData(questionnaire, 'eyeColor') // wait for data
-      .then(data => removeWhitespace(data, 'eyeColor')) // remove whitespace
-      .then(trimmed => addHash(trimmed, 'eyeColor')) // add hashtag
-      .then(withHash => wordToHex(withHash, 'eyeColor')) // convert text to hex
-      .then(allColors => rgbToHex(allColors, 'eyeColor')) // convert rgb to hex
-      .then(cleanHEX => toUpperCase(cleanHEX, 'eyeColor')) // make uppercase
+    return cleanColors = await getData(questionnaire, variable) // wait for data
+      .then(data => removeWhitespace(data, variable)) // remove whitespace
+      .then(trimmed => addHash(trimmed, variable)) // add hashtag
+      .then(withHash => wordToHex(withHash, variable)) // convert text to hex
+      .then(allColors => rgbToHex(allColors, variable)) // convert rgb to hex
+      .then(cleanHEX => toUpperCase(cleanHEX, variable)) // make uppercase
   } catch (err) {
     console.error(err)
   }
