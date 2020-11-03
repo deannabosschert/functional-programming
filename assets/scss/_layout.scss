@@ -104,7 +104,7 @@ footer p {
 }
 /* LAYOUT */
 .bedroomSizes,
-.colorList {
+.colorList, .shoeSizes {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -117,7 +117,7 @@ footer p {
   padding: 1.2rem 1rem;
 }
 
-.bedroomSizes {
+.bedroomSizes, .shoeSizes {
   text-align: center;
   font-weight: bold;
   border-radius: $border-radius;
@@ -130,6 +130,17 @@ footer p {
 
 .bedroomSizes li:nth-child(even) {
   background-color: $pink;
+  color: black;
+}
+
+.shoeSizes li {
+  width: 4.54rem;
+  padding: 0.5rem 0.3rem;
+  background-color: $lightpink;
+}
+
+.shoeSizes li:nth-child(even) {
+  background-color: $lavender;
   color: black;
 }
 
