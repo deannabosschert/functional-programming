@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-# [Rubric](https://github.com/cmda-tt/course-20-21/blob/master/pages/functional-programming/assessment.md)
+# 📈 [Rubric](https://github.com/cmda-tt/course-20-21/blob/master/pages/functional-programming/assessment.md)
 ![screenshot of rubric](https://github.com/deannabosschert/functional-programming/blob/trunk/docs/assets/img/rubric.png)
 
 Please use the legenda below to assign the values to the criteria (example-filled already)

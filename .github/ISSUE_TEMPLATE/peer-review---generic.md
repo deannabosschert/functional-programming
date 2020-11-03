@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-# ⚙️Issue
+# ⚙️ Issue
 ## 📁 Part of repo
 _about what part of my repo is this issue? e.g. index.html, app.js, readme.md, etc_
 
