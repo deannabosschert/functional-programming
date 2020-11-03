@@ -36,4 +36,15 @@ title: Functional Programming
       {% endfor %}
     </ul>
   </article>
+  <article>
+    <h2>Shoe sizes</h2>
+    <p>Cleaned by removing whitespace and converting ',' to '.'</p>
+    <ul class="shoeSizes">
+      {% for shoeSize in shoeSizes %}
+      <li>Maat {{ shoeSize.shoeSize | safe }}</li>
+      {% else %}
+      <li>This would display if the 'shoeSize'-collection were empty</li>
+      {% endfor %}
+    </ul>
+  </article>
 </section>
