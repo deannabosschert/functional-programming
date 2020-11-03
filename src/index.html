@@ -21,7 +21,18 @@ title: Functional Programming
       {% for favoriteColor in favoriteColors %}
       {{ favoriteColor.favoriteColor | safe }}
       {% else %}
-      <li>This would display if the 'favoriteColorss'-collection were empty</li>
+      <li>This would display if the 'favoriteColors'-collection were empty</li>
+      {% endfor %}
+    </ul>
+  </article>
+  <article>
+    <h2>Bedroom sizes</h2>
+    <p>Cleaned by removing whitespace and converting ',' to '.'</p>
+    <ul class="bedroomSizes">
+      {% for bedroomSize in bedroomSizes %}
+      {{ bedroomSize.bedroomSize | safe }}
+      {% else %}
+      <li>This would display if the 'bedroomSize'-collection were empty</li>
       {% endfor %}
     </ul>
   </article>
