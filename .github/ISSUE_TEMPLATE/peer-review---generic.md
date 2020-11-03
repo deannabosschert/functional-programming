@@ -1,7 +1,7 @@
 ---
-name: "Peer review \U0001F465"
-about: Use this template to create issues during the peer reviews.
-title: "Peer review \U0001F465"
+name: "Generic issue \U0001F465"
+about: Use this template to create some generic or standalone issue during the peer reviews.
+title: "Peer review: Generic \U0001F465"
 labels: 'peer-review'
 assignees: ''
 

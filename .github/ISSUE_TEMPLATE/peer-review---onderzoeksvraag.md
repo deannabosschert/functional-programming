@@ -1,5 +1,5 @@
 ---
-name: "Peer review: Onderzoeksvraag \U0001F465"
+name: "Onderzoeksvraag \U0001F465"
 about: Use this template to create issues about the onderzoeksvraag during the peer reviews.
 title: "Peer review: Onderzoeksvraag \U0001F465"
 labels: 'peer-review-onderzoeksvraag'
