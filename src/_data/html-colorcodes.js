@@ -1,4 +1,4 @@
-module.exports = HTMLkleurcodes = [
+module.exports = HTMLcolorcodes = [
   {
     "Kleurgroep": "Rode kleuren",
     "HEX": "#CD5C5C",

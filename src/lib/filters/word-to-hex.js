@@ -1,4 +1,4 @@
-const htmlcolors = require('../../_data/html-kleurcodes.js')
+const htmlcolors = require('../../_data/html-colorcodes.js')
 
 module.exports = function wordToHex(data, variable) { // look for the matching hex in the htmlcolors-file
   return data.map((item) => {
