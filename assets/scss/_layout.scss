@@ -82,14 +82,14 @@ p {
   text-align: center;
 }
 
-ul {
+ul {}
 
-}
-
-li {
-  // background-color: lightblue;
-  // padding: 1rem;
-  // margin: 0.5rem;
+main li {
+  margin: 0.2rem;
+  width: 4.5rem;
+  text-align: center;
+  font-weight: bold;
+  border-radius: $border-radius;
 }
 
 footer {
@@ -102,24 +102,15 @@ footer {
 footer p {
   width: 100%;
 }
-
 /* LAYOUT */
-.colorList, .bedroomSizes {
+.bedroomSizes,
+.colorList {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   max-width: 80vw;
-}
-
-li {
-  margin: 0.2rem;
-  width: 4.5rem;
-  text-align: center;
-  font-weight: bold;
-  border-radius: $border-radius;
   color: white;
-
 }
 
 .colorList li {
@@ -127,7 +118,6 @@ li {
 }
 
 .bedroomSizes {
-  // width: 4.5rem;
   text-align: center;
   font-weight: bold;
   border-radius: $border-radius;
@@ -139,7 +129,6 @@ li {
 }
 
 .bedroomSizes li:nth-child(even) {
-  padding: 0.5rem 0.3rem;
   background-color: $pink;
   color: black;
 }

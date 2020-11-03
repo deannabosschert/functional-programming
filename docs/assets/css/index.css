@@ -343,6 +343,14 @@ p {
   text-align: center;
 }
 
+main li {
+  margin: 0.2rem;
+  width: 4.5rem;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
 footer {
   width: 100%;
   display: flex;
@@ -355,20 +363,13 @@ footer p {
 }
 
 /* LAYOUT */
-.colorList, .bedroomSizes {
+.bedroomSizes,
+.colorList {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   max-width: 80vw;
-}
-
-li {
-  margin: 0.2rem;
-  width: 4.5rem;
-  text-align: center;
-  font-weight: bold;
-  border-radius: 5px;
   color: white;
 }
 
@@ -388,7 +389,6 @@ li {
 }
 
 .bedroomSizes li:nth-child(even) {
-  padding: 0.5rem 0.3rem;
   background-color: #ece0ec;
   color: black;
 }
