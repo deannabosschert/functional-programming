@@ -355,7 +355,7 @@ footer p {
 }
 
 /* LAYOUT */
-.eyeColorList {
+.colorList, .bedroomSizes {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -363,14 +363,34 @@ footer p {
   max-width: 80vw;
 }
 
-.eyeColorList li {
-  padding: 1.2rem 1rem;
+li {
   margin: 0.2rem;
   width: 4.5rem;
   text-align: center;
   font-weight: bold;
   border-radius: 5px;
   color: white;
+}
+
+.colorList li {
+  padding: 1.2rem 1rem;
+}
+
+.bedroomSizes {
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.bedroomSizes li {
+  padding: 0.5rem 0.3rem;
+  background-color: #b582b5;
+}
+
+.bedroomSizes li:nth-child(even) {
+  padding: 0.5rem 0.3rem;
+  background-color: #ece0ec;
+  color: black;
 }
 
 .backToTop {
