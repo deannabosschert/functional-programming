@@ -4,7 +4,6 @@ const removeWhitespace = require('./filters/remove-whitespace.js')
 const pointToComma = require('./filters/point-to-comma.js')
 
 // I should refactor everything in a way that I map over the values at first, then filter and reduce instead of repeating to map
-// I should also swap the adding of the hash and the converting..
 
 module.exports = async (variable) => {
   try {

@@ -343,6 +343,14 @@ p {
   text-align: center;
 }
 
+main li {
+  margin: 0.2rem;
+  width: 4.5rem;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
 footer {
   width: 100%;
   display: flex;
@@ -355,22 +363,45 @@ footer p {
 }
 
 /* LAYOUT */
-.eyeColorList {
+.bedroomSizes,
+.colorList, .shoeSizes {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   max-width: 80vw;
+  color: white;
 }
 
-.eyeColorList li {
+.colorList li {
   padding: 1.2rem 1rem;
-  margin: 0.2rem;
-  width: 4.5rem;
+}
+
+.bedroomSizes, .shoeSizes {
   text-align: center;
   font-weight: bold;
   border-radius: 5px;
-  color: white;
+}
+
+.bedroomSizes li {
+  padding: 0.5rem 0.3rem;
+  background-color: #b582b5;
+}
+
+.bedroomSizes li:nth-child(even) {
+  background-color: #ece0ec;
+  color: black;
+}
+
+.shoeSizes li {
+  width: 4.54rem;
+  padding: 0.5rem 0.3rem;
+  background-color: #ff9dab;
+}
+
+.shoeSizes li:nth-child(even) {
+  background-color: #E6E6FA;
+  color: black;
 }
 
 .backToTop {

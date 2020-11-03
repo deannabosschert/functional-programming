@@ -6,7 +6,7 @@ title: Functional Programming
   <article>
     <h2>Eyecolors</h2>
     <p>Cleaned by removing whitespace, adding a hashtag, matching text-inputs to the correct hex, converting rgb-inputs to hex and making everything uppercase. </p>
-    <ul class="eyeColorList">
+    <ul class="colorList">
       {% for eyeColor in eyeColors %}
       {{ eyeColor.eyeColor | safe }}
       {% else %}
@@ -17,7 +17,7 @@ title: Functional Programming
   <article>
     <h2>Favorite colors</h2>
     <p>Cleaned by doing the same as above, by making every function functional! </p>
-    <ul class="eyeColorList">
+    <ul class="colorList">
       {% for favoriteColor in favoriteColors %}
       {{ favoriteColor.favoriteColor | safe }}
       {% else %}
@@ -30,9 +30,20 @@ title: Functional Programming
     <p>Cleaned by removing whitespace and converting ',' to '.'</p>
     <ul class="bedroomSizes">
       {% for bedroomSize in bedroomSizes %}
-      {{ bedroomSize.bedroomSize | safe }}
+      <li>{{ bedroomSize.bedroomSize | safe }} m²</li>
       {% else %}
       <li>This would display if the 'bedroomSize'-collection were empty</li>
+      {% endfor %}
+    </ul>
+  </article>
+  <article>
+    <h2>Shoe sizes</h2>
+    <p>Cleaned by removing whitespace and converting ',' to '.'</p>
+    <ul class="shoeSizes">
+      {% for shoeSize in shoeSizes %}
+      <li>Maat {{ shoeSize.shoeSize | safe }}</li>
+      {% else %}
+      <li>This would display if the 'shoeSize'-collection were empty</li>
       {% endfor %}
     </ul>
   </article>

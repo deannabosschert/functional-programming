@@ -5,7 +5,7 @@ html {
 
 body {
   font-family: sans-serif;
-  background-image: radial-gradient(#ece0ec 10%, transparent 0);
+  background-image: radial-gradient($pink 10%, transparent 0);
   background-size: 20px 20px;
   display: flex;
   flex-direction: column;
@@ -34,7 +34,7 @@ nav ul {
 
 nav ul li {
   padding: 0.2rem;
-  border-bottom: 3px solid #754575;
+  border-bottom: 3px solid $purple;
   margin-bottom: 0;
 }
 
@@ -59,7 +59,7 @@ section {
   padding: 1rem 2rem;
   border-radius: 6px;
   background: #fefefe;
-  box-shadow: inset 6px 6px 9px #f1f1f1, inset -6px -6px 9px #ffffff;
+  box-shadow: inset 6px 6px 9px $light-grey, inset -6px -6px 9px #ffffff;
   margin-bottom: 2rem;
 }
 
@@ -82,6 +82,16 @@ p {
   text-align: center;
 }
 
+ul {}
+
+main li {
+  margin: 0.2rem;
+  width: 4.5rem;
+  text-align: center;
+  font-weight: bold;
+  border-radius: $border-radius;
+}
+
 footer {
   width: 100%;
   display: flex;
@@ -92,24 +102,46 @@ footer {
 footer p {
   width: 100%;
 }
-
 /* LAYOUT */
-.eyeColorList {
+.bedroomSizes,
+.colorList, .shoeSizes {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   max-width: 80vw;
+  color: white;
 }
 
-.eyeColorList li {
+.colorList li {
   padding: 1.2rem 1rem;
-  margin: 0.2rem;
-  width: 4.5rem;
+}
+
+.bedroomSizes, .shoeSizes {
   text-align: center;
   font-weight: bold;
   border-radius: $border-radius;
-  color: white;
+}
+
+.bedroomSizes li {
+  padding: 0.5rem 0.3rem;
+  background-color: $lilac;
+}
+
+.bedroomSizes li:nth-child(even) {
+  background-color: $pink;
+  color: black;
+}
+
+.shoeSizes li {
+  width: 4.54rem;
+  padding: 0.5rem 0.3rem;
+  background-color: $lightpink;
+}
+
+.shoeSizes li:nth-child(even) {
+  background-color: $lavender;
+  color: black;
 }
 
 .backToTop {
