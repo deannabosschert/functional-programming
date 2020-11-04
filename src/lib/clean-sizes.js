@@ -1,4 +1,4 @@
-const questionnaire = require('../_data/Survey_Information_Design_clean-parsed.js')
+const questionnaire = require('../_data/datasets/Survey_Information_Design_clean-parsed.js')
 const getData = require('./filters/get-data.js')
 const removeWhitespace = require('./filters/remove-whitespace.js')
 const pointToComma = require('./filters/point-to-comma.js')
