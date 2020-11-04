@@ -5,7 +5,7 @@ Focus on the data cleaning beforehand.
 
 > Alle teksten in het Nederlands behoren tot de concept/developmentfase, uiteindelijk zal de readme volledig in het Engels zijn. Zo kan ik concept VS eindproduct wat beter scheiden.
 
-# Auto’s in de stad
+# Survey Data Cleaning && Auto’s in de stad
 [![Netlify Status](https://api.netlify.com/api/v1/badges/eaf5a426-0c2d-4380-b88d-e4441f880600/deploy-status)](https://app.netlify.com/sites/functional-programming-2021/deploys) ... [link to deploy](https://functional-programming-2021.netlify.app/)
 ![screenshot of website](https://github.com/deannabosschert/functional-programming/blob/trunk/docs/assets/img/screenshot_website.png)
 <details>
@@ -13,6 +13,55 @@ Focus on the data cleaning beforehand.
   
 ![gif of website](https://github.com/deannabosschert/functional-programming/blob/trunk/docs/assets/img/screenshot_website.gif)
 </details>
+
+This assignment actually consists of two parts:
+* Data cleaning of survey data with functional patterns
+* RDW data manipulation and rendering
+
+On the deploy, these two parts are divided between the 'Survey Data' and 'RDW Data'-tabs.
+For this repo, I decided to keep it all as it were after the survey data-part, as the whole part of functional programming is to be able to re-use functions anyways. I think it's much cleaner this way too, otherwise I would've had some weird folder structure. The two parts are clearly divived in the documentation in the [wiki](https://github.com/deannabosschert/functional-programming/wiki) though.
+
+<details>
+  <summary><strong>Table of Contents</strong> (click to expand)</summary>
+
+<!-- toc -->
+
+- [✅ To-do](#--to-do)
+- [📋 Concept](#---concept)
+- [⚙️ Installation](#---installation)
+<!-- - [🧑🏼‍ Actor Diagram](#------actor-diagram)
+- [↔️ Interaction diagram](#---interaction-diagram) -->
+<!-- - [🌍 Design patterns](#---design-patterns) -->
+<!-- - [👍🏽 Best practices](#-----best-practices) -->
+- [🗃 Data](#---data)
+  * [🐒 Github API](#---github-api)
+    + [Endpoint(s)](#endpoint-s-)
+    + [Rate limiting](#rate-limiting)
+  * [💽 Data cleaning](#---data-cleaning)
+- [👯🏿‍ Features (+ wishlist)](#------features----wishlist-)
+- [🏫 Assignment](#---assignment)
+  * [Learning goals](#learning-goals)
+  * [Week 1 - Hello API 🐒](#week-1---hello-api---)
+  * [Week 2 - Design and Refactor 🛠](#week-2---design-and-refactor---)
+  * [Week 3 - Wrapping up 🎁](#week-3---wrapping-up---)
+  * [Rubric](#rubric)
+- [ℹ️ Resources](#---resources)
+  * [Credits](#credits)
+  * [Small inspiration sources](#small-inspiration-sources)
+- [🗺️ License](#----license)
+
+<!-- tocstop -->
+
+</details>
+
+## ✅ To-do
+See the [project board](https://github.com/deannabosschert/functional-programming/projects/1) for my current to-do's
+
+## 📋 Concept
+_What does your app do, what is the goal? (passing butter)_   
+Conceptvragen zijn hieronder uitgewerkt; zodra de app 'klaar' is zal ik hier onder 'concept' van begin tot eind beschrijven wat de gebruiker specifiek op mijn site kan doen. Zal ook in het Engels uitgeschreven worden.
+
+For more information about the concept, see the [wiki page](https://github.com/deannabosschert/functional-programming/wiki/Concept) (in Dutch).
 
 ## Parkeergelegenheden in coronatijd
 **Welke bijkomende problemen zijn ontstaan met de komst van corona, met betrekking tot parkeergelegenheden?**    
@@ -57,47 +106,6 @@ Persoonlijke noot: de 'deelvragen' zijn waarschijnlijk al onderzoeksvragen op zi
 
 For more ideas, see the [Wiki page about my concept](https://github.com/deannabosschert/functional-programming/wiki)  
 
-<details>
-  <summary><strong>Table of Contents</strong> (click to expand)</summary>
-
-<!-- toc -->
-
-- [✅ To-do](#--to-do)
-- [📋 Concept](#---concept)
-- [⚙️ Installation](#---installation)
-<!-- - [🧑🏼‍ Actor Diagram](#------actor-diagram)
-- [↔️ Interaction diagram](#---interaction-diagram) -->
-<!-- - [🌍 Design patterns](#---design-patterns) -->
-<!-- - [👍🏽 Best practices](#-----best-practices) -->
-- [🗃 Data](#---data)
-  * [🐒 Github API](#---github-api)
-    + [Endpoint(s)](#endpoint-s-)
-    + [Rate limiting](#rate-limiting)
-  * [💽 Data cleaning](#---data-cleaning)
-- [👯🏿‍ Features (+ wishlist)](#------features----wishlist-)
-- [🏫 Assignment](#---assignment)
-  * [Learning goals](#learning-goals)
-  * [Week 1 - Hello API 🐒](#week-1---hello-api---)
-  * [Week 2 - Design and Refactor 🛠](#week-2---design-and-refactor---)
-  * [Week 3 - Wrapping up 🎁](#week-3---wrapping-up---)
-  * [Rubric](#rubric)
-- [ℹ️ Resources](#---resources)
-  * [Credits](#credits)
-  * [Small inspiration sources](#small-inspiration-sources)
-- [🗺️ License](#----license)
-
-<!-- tocstop -->
-
-</details>
-
-## ✅ To-do
-See the [project board](https://github.com/deannabosschert/functional-programming/projects/1) for my current to-do's
-
-## 📋 Concept
-_What does your app do, what is the goal? (passing butter)_   
-Conceptvragen zijn hierboven al uitgewerkt; zodra de app 'klaar' is zal ik hier onder 'concept' van begin tot eind beschrijven wat de gebruiker specifiek op mijn site kan doen. Zal ook in het Engels uitgeschreven worden.
-
-For more information about the concept, see the [wiki page](https://github.com/deannabosschert/functional-programming/wiki/Concept) (in Dutch).
 
 ## ⚙️ Installation
 Clone this repository to your own device:
