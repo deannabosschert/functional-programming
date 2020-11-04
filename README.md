@@ -67,8 +67,8 @@ For more ideas, see the [Wiki page about my concept](https://github.com/deannabo
 - [⚙️ Installation](#---installation)
 <!-- - [🧑🏼‍ Actor Diagram](#------actor-diagram)
 - [↔️ Interaction diagram](#---interaction-diagram) -->
-- [🌍 Design patterns](#---design-patterns)
-- [👍🏽 Best practices](#-----best-practices)
+<!-- - [🌍 Design patterns](#---design-patterns) -->
+<!-- - [👍🏽 Best practices](#-----best-practices) -->
 - [🗃 Data](#---data)
   * [🐒 Github API](#---github-api)
     + [Endpoint(s)](#endpoint-s-)
@@ -96,6 +96,8 @@ See the [project board](https://github.com/deannabosschert/functional-programmin
 ## 📋 Concept
 _What does your app do, what is the goal? (passing butter)_   
 Conceptvragen zijn hierboven al uitgewerkt; zodra de app 'klaar' is zal ik hier onder 'concept' van begin tot eind beschrijven wat de gebruiker specifiek op mijn site kan doen. Zal ook in het Engels uitgeschreven worden.
+
+For more information about the concept, see the [wiki page](https://github.com/deannabosschert/functional-programming/wiki/Concept) (in Dutch).
 
 ## ⚙️ Installation
 Clone this repository to your own device:
@@ -163,7 +165,7 @@ _How does flowed interaction through the application? (interaction diagram)_
 - van
 - patterns -->
 
-## 👍🏽 Best practices
+<!-- ## 👍🏽 Best practices
 - Make sure everything's in functions. No global stuff!
 - Keep your functions as 'to the point' as possible; every function should only return 1 thing.
 - Every function should also return _something_.
@@ -185,19 +187,13 @@ None! Or well, 1.3 million I've heard.
 ### 💽 Data cleaning
 _What has been done with the fetched data?_What has been done with the initial data? Cleaning pattern?
 
-See my [Wiki](https://github.com/deannabosschert/functional-programming-2021/wiki/Data-opschonen) for a more detailed view.
+See my [Wiki](https://github.com/deannabosschert/functional-programming-2021/wiki/Data-opschonen) for a detailed view of my data cleaning and functional patterns.
 
-```js
-```
-
-outcome:
-```json
-```
 
 ## 👯🏿‍ Features (+ wishlist)
 _What would you like to add (feature wishlist / backlog)?_
 
-- [ ] Some script that automatically writes the cleaned data to my 'data'-folder in prebuild
+- [ ] Some script that automatically writes the filtered data to my 'data'-folder in prebuild
 
 ## 🏫 Assignment
 <details>
@@ -235,27 +231,24 @@ See my [wiki](https://github.com/deannabosschert/functional-programming/wiki) fo
 
 </details>
 
-<!-- ### Rubric
+### Rubric
 
 [Rubric- detailed rating of my project](https://github.com/deannabosschert/functional-programming/wiki/Rubric)
-![rubric](https://github.com/deannabosschert/functional-programming/blob/master/src/img/rubric.png) -->
+![rubric](https://github.com/deannabosschert/functional-programming/blob/master/src/img/rubric.png)
 
 ## ℹ️ Resources
 
 ### Credits
-
-- Our superamazingteachers at the [Tech Track @CMD](https://github.com/cmda-tt/)
+- Our superamazingteachers at the [Tech Track @CMD](https://github.com/cmda-tt/) :heart:
 - Curran :heart:
-- [Zekkie](https://github.com/ZekkieB) for feedback (see _Issues_)
+- My amazing support group :heart:
 
 ### (Small) inspiration sources
-
 - https://www.section.io/engineering-education/templating-your-static-site/ for using ejs with 11ty
 - https://opendata.rdw.nl/browse?category=Parkeren&provenance=official&page=1 for the datasets
 - Docs of Nunjucks, Eleventy, EJS, D3.js, etc.
 - My former projects, like progressive-web-apps
 
 ## 🗺️ License
-
 Author: [Deanna Bosschert](https://github.com/deannabosschert) , license by
 [MIT](https://github.com/deannabosschert/functional-programming/blob/master/LICENSE)
