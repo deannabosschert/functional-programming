@@ -1,18 +1,20 @@
-// const questionnaire = require('../_data/datasets/Survey_Information_Design_clean-parsed.js')
-const endpoint = "de"
 const getData = require('./filters/get-data-d3.js')
 
-// const removeWhitespace = require('./filters/remove-whitespace.js')
-// const pointToComma = require('./filters/point-to-comma.js')
+require('dotenv').config()
+const query = "adw6-9hsg"
+const limit = 2
+const url = `https://opendata.rdw.nl/resource/${query}.json?$limit=${limit}&$$app_token=${process.env.APP_TOKEN}`
 
-// I should refactor everything in a way that I map over the values at first, then filter and reduce instead of repeating to map
-
-module.exports = async (variable) => {
+module.exports = async () => {
   try {
-    return cleanColors = await getData(questionnaire, variable) // wait for data
-      .then(data => removeWhitespace(data, variable)) // remove whitespace
-      .then(data => pointToComma(data, variable))
+    return cleanData = await getData(url) // wait for data
+      .then(data => filterEen(data))
   } catch (err) {
     console.error(err)
   }
+}
+
+function filterEen(data) {
+  console.log(data)
+  return data
 }
