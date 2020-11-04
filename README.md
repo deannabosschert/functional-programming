@@ -139,27 +139,6 @@ npm run dev
   }
 ```
 
-
-<!-- ## 🧑🏼‍ Actor Diagram
-_Which actors are there in your application? (actor diagram)_
-![actor diagram](https://github.com/deannabosschert/functional-programming-2021/blob/master/src/img/actordiagram.png)
-<!-- 
-## ↔️ Interaction diagram
-_How does flowed interaction through the application? (interaction diagram)_
-![interaction diagram](https://github.com/deannabosschert/functional-programming-2021/blob/master/src/img/interactiondiagram.png) -->
- -->
-<!-- ## 🌍 Design patterns
-<!-- 
-- opsomming
-- van
-- patterns -->
-
-<!-- ## 👍🏽 Best practices
-- Make sure everything's in functions. No global stuff!
-- Keep your functions as 'to the point' as possible; every function should only return 1 thing.
-- Every function should also return _something_.
- -->
-
 ## 🗃 Data
 
 ### 🐒 API
@@ -174,7 +153,7 @@ RDW dataset
 None! Or well, 1.3 million I've heard.
 
 ### 💽 Data cleaning
-_What has been done with the fetched data?_What has been done with the initial data? Cleaning pattern?
+_What has been done with the fetched data?_What has been done with the initial data? Cleaning pattern?_
 
 See my [Wiki](https://github.com/deannabosschert/functional-programming-2021/wiki/Data-opschonen) for a detailed view of my data cleaning and functional patterns.
 
