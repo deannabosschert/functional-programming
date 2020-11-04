@@ -91,16 +91,7 @@ For more ideas, see the [Wiki page about my concept](https://github.com/deannabo
 </details>
 
 ## ✅ To-do
-- [x] Refactor; njk to ejs
-- [x] Change folder structure
-- [x] Render data via ejs on screen
-- [x] Refactor: ejs to njk
-- [x] Render data via njk
-- [x] Render data correctly
-- [x] Add cleaning-functions to /lib
-- [x] Add another cleaning function to /lib
-- [x] Update to-do's in project board
-- [ ] Fetch data from API
+See the [project board](https://github.com/deannabosschert/functional-programming/projects/1) for my current to-do's
 
 ## 📋 Concept
 _What does your app do, what is the goal? (passing butter)_   
@@ -142,17 +133,32 @@ npm run dev
   }
 ```
 
+#### Scripts
+```json
+  "scripts": {
+    "predev": "rimraf docs",
+    "dev:eleventy": "npx @11ty/eleventy --formats=html,njk,ejs,gif,jpg,png,css --serve --port=3000",
+    "dev:css": "sass --watch assets/scss:docs/assets/css/",
+    "dev": "cross-env ELEVENTY_ENV=development run-p dev:*",
+    "debug": "DEBUG=* eleventy",
+    "prebuild": "rimraf docs",
+    "build": "cross-env ELEVENTY_ENV=production run-s build:*",
+    "build:eleventy": "eleventy",
+    "build:css": "node-sass --importer node_modules/node-sass-glob-importer/dist/cli.js assets/scss/index.scss docs/assets/css/index.css"
+  }
+```
+
 
 <!-- ## 🧑🏼‍ Actor Diagram
 _Which actors are there in your application? (actor diagram)_
 ![actor diagram](https://github.com/deannabosschert/functional-programming-2021/blob/master/src/img/actordiagram.png)
-
+<!-- 
 ## ↔️ Interaction diagram
 _How does flowed interaction through the application? (interaction diagram)_
 ![interaction diagram](https://github.com/deannabosschert/functional-programming-2021/blob/master/src/img/interactiondiagram.png) -->
-
+ -->
 <!-- ## 🌍 Design patterns
-
+<!-- 
 - opsomming
 - van
 - patterns -->
@@ -161,7 +167,7 @@ _How does flowed interaction through the application? (interaction diagram)_
 - Make sure everything's in functions. No global stuff!
 - Keep your functions as 'to the point' as possible; every function should only return 1 thing.
 - Every function should also return _something_.
-
+ -->
 
 ## 🗃 Data
 
