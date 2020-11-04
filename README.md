@@ -21,38 +21,19 @@ This assignment actually consists of two parts:
 On the deploy, these two parts are divided between the 'Survey Data' and 'RDW Data'-tabs.
 For this repo, I decided to keep it all as it were after the survey data-part, as the whole part of functional programming is to be able to re-use functions anyways. I think it's much cleaner this way too, otherwise I would've had some weird folder structure. The two parts are clearly divived in the documentation in the [wiki](https://github.com/deannabosschert/functional-programming/wiki) though.
 
-<details>
-  <summary><strong>Table of Contents</strong> (click to expand)</summary>
-
-<!-- toc -->
-
-- [✅ To-do](#--to-do)
-- [📋 Concept](#---concept)
-- [⚙️ Installation](#---installation)
-<!-- - [🧑🏼‍ Actor Diagram](#------actor-diagram)
-- [↔️ Interaction diagram](#---interaction-diagram) -->
-<!-- - [🌍 Design patterns](#---design-patterns) -->
-<!-- - [👍🏽 Best practices](#-----best-practices) -->
-- [🗃 Data](#---data)
-  * [🐒 Github API](#---github-api)
-    + [Endpoint(s)](#endpoint-s-)
-    + [Rate limiting](#rate-limiting)
-  * [💽 Data cleaning](#---data-cleaning)
-- [👯🏿‍ Features (+ wishlist)](#------features----wishlist-)
-- [🏫 Assignment](#---assignment)
-  * [Learning goals](#learning-goals)
-  * [Week 1 - Hello API 🐒](#week-1---hello-api---)
-  * [Week 2 - Design and Refactor 🛠](#week-2---design-and-refactor---)
-  * [Week 3 - Wrapping up 🎁](#week-3---wrapping-up---)
-  * [Rubric](#rubric)
-- [ℹ️ Resources](#---resources)
-  * [Credits](#credits)
-  * [Small inspiration sources](#small-inspiration-sources)
-- [🗺️ License](#----license)
-
-<!-- tocstop -->
-
-</details>
+## Table of Contents
+  * [Assessment](#assessment)
+- [Survey Data Cleaning && Auto’s in de stad](#survey-data-cleaning----auto-s-in-de-stad)
+  * [✅ To-do](#--to-do)
+  * [📋 Concept](#---concept)
+  * [🅿️ Parkeergelegenheden in coronatijd](#parkeergelegenheden-in-coronatijd)
+  * [⚙️ Installation](#---installation)
+  * [↔️ Interaction diagram](#---interaction-diagram)
+  * [🗃 Data](#---data)
+  * [👯🏿‍ Features (+ wishlist)](#------features----wishlist-)
+  * [🏫 Assignment](#---assignment)
+  * [ℹ️ Resources](#---resources)
+  * [🗺️ License](#----license)
 
 ## ✅ To-do
 See the [project board](https://github.com/deannabosschert/functional-programming/projects/1) for my current to-do's
@@ -63,7 +44,7 @@ Conceptvragen zijn hieronder uitgewerkt; zodra de app 'klaar' is zal ik hier ond
 
 For more information about the concept, see the [wiki page](https://github.com/deannabosschert/functional-programming/wiki/Concept) (in Dutch).
 
-## Parkeergelegenheden in coronatijd
+## 🅿️ Parkeergelegenheden in coronatijd
 **Welke bijkomende problemen zijn ontstaan met de komst van corona, met betrekking tot parkeergelegenheden?**    
 
 ### Deelvraag 1: avondklok
