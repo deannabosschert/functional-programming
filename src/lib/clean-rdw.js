@@ -1,7 +1,9 @@
-const questionnaire = require('../_data/datasets/Survey_Information_Design_clean-parsed.js')
-const getData = require('./filters/get-data.js')
-const removeWhitespace = require('./filters/remove-whitespace.js')
-const pointToComma = require('./filters/point-to-comma.js')
+// const questionnaire = require('../_data/datasets/Survey_Information_Design_clean-parsed.js')
+const endpoint = "de"
+const getData = require('./filters/get-data-d3.js')
+
+// const removeWhitespace = require('./filters/remove-whitespace.js')
+// const pointToComma = require('./filters/point-to-comma.js')
 
 // I should refactor everything in a way that I map over the values at first, then filter and reduce instead of repeating to map
 
