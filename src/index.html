@@ -6,5 +6,12 @@ title: Functional Programming
   <article>
     <h2>RDW Data</h2>
     <p>Cleaned by doing stuff.</p>
+    <ul>
+      {% for rdwDataset in rdwDatasets %}
+      {{ rdwDataset.shoeSize | safe }}
+      {% else %}
+      <li>This would display if the 'eyeColors'-collection were empty</li>
+      {% endfor %}
+    </ul>
   </article>
 </section>
