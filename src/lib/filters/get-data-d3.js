@@ -1,9 +1,9 @@
-function getData(endpoint, query_IDs){
-  const querySource_ID = endpoint + '?query=' + encodeURIComponent(query_IDs) + '&format=json'
-  return d3.json(querySource_ID).then(function(data){
-    return data.results.bindings
-    // loadData2(data1)
-  })
-}
+// const d3 = require('d3')
+const fetch = require("node-fetch");
 
-const endpoint = "https://opendata.rdw.nl/resource/ixf8-gtwq.json"
+module.exports = function getData(url) {
+  return fetch(url).then(response => response.json()).then((data) => {
+    console.log("Retrieved " + data.length + " records from the dataset!")
+    return data
+  });
+}
