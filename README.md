@@ -219,4 +219,5 @@ See my [wiki](https://github.com/deannabosschert/functional-programming/wiki) fo
 
 ## 🗺️ License
 Author: [Deanna Bosschert](https://github.com/deannabosschert) , license by
-[MIT](https://github.com/deannabosschert/functional-programming/blob/master/LICENSE)
+[MIT](https://github.com/deannabosschert/functional-programming/blob/master/LICENSE)      
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
