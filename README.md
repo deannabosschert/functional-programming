@@ -64,7 +64,7 @@ For more information about the concept, see the [wiki page](https://github.com/d
 * MaxDurationRight (api: maxdurationright) - De maximale tijdsduur waarvoor in een gebied dat valt onder de betreffende regeling, in dit betreffende tijdvak een recht kan worden verworven (minuten).
 * MinParkingInterruption (api: minparkinginterruption) - De minimale tijdsduur in minuten tussen twee rechten in hetzelfde gebied voor hetzelfde voertuig die geldt bij dit TimeFrame.    
 
-Eventueel bruikbaar:   
+Eventueel bruikbaar:  
 
 * ClaimRightPossible (api: claimrightispossible) - Indicatie of het mogelijk is binnen dit TimeFrame een recht te verwerven of niet. J: in dit tijdvak is het wel mogelijk rechten te verwerven, N: in dit tijdvak is het niet mogelijk rechten te verwerven.
 * FareCalculationCode (api: farecalculationcode) - Verwijzing naar het tarief, indien voor een recht in een tijdvak een tarief verschuldigd is. Kan alleen van toepassing zijn als ClaimRightPossible = J
@@ -192,17 +192,24 @@ npm run dev
 
 ### 🐒 API
 _What external data source is featured in your project and what are its properties?_
-RDW dataset
+Surveydata of 2020 Information Design students
+RDW datasets Tijdvak, Specificaties Parkeergebied, Geometrie Gebied.
 
 #### Properties
-* areaid
-* capacity
-* areageometryastext
-* (disabledaccess)
+* areaid     
+* capacity     
+* areageometryastext     
+* (disabledaccess)     
 
+* areamanagerid      
 * daytimeframe     
 * starttimetimeframe     
-* endtimetimeframe
+* endtimetimeframe     
+* enddatetimeframe     
+* maxdurationright     
+* minparkinginterruption     
+* claimrightispossible     
+* farecalculationcode     
 
 
 #### Rate limiting
