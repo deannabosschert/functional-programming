@@ -5,8 +5,8 @@ Focus on the data cleaning beforehand.
 
 > Alle teksten in het Nederlands behoren tot de concept/developmentfase, uiteindelijk zal de readme volledig in het Engels zijn. Zo kan ik concept VS eindproduct wat beter scheiden.
 
-# Survey Data Cleaning && Auto’s in de stad
-[![Netlify Status](https://api.netlify.com/api/v1/badges/eaf5a426-0c2d-4380-b88d-e4441f880600/deploy-status)](https://app.netlify.com/sites/functional-programming-2021/deploys) ... [link to deploy](https://functional-programming-2021.netlify.app/)
+# Survey Data Cleaning + Auto’s in de stad
+<!-- [![Netlify Status](https://api.netlify.com/api/v1/badges/eaf5a426-0c2d-4380-b88d-e4441f880600/deploy-status)](https://app.netlify.com/sites/functional-programming-2021/deploys) ... [link to deploy](https://functional-programming-2021.netlify.app/)-->
 ![screenshot of website](https://github.com/deannabosschert/functional-programming/blob/trunk/docs/assets/img/screenshot_website.png)
 <details>
   <summary><strong>gif screencapture</strong> (click to expand)</summary>
@@ -39,7 +39,6 @@ For this repo, I decided to keep it all as it were after the survey data-part, a
 See the [project board](https://github.com/deannabosschert/functional-programming/projects/1) for my current to-do's
 
 ## 📋 Concept
-_What does your app do, what is the goal? (passing butter)_   
 Conceptvragen zijn hieronder uitgewerkt; zodra de app 'klaar' is zal ik hier onder 'concept' van begin tot eind beschrijven wat de gebruiker specifiek op mijn site kan doen. Zal ook in het Engels uitgeschreven worden.
 
 For more information about the concept, see the [wiki page](https://github.com/deannabosschert/functional-programming/wiki/Concept) (in Dutch).
@@ -51,7 +50,17 @@ For more information about the concept, see the [wiki page](https://github.com/d
 **Welke parkeerplaatsen zouden qua tijdsframe een probleem kunnen vormen indien er een Corona-avondklok wordt ingevoerd?**    
 **Dataset:** https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-TIJDVAK/ixf8-gtwq    
 **Aanname:** een aantal plaatsen zullen gemarkeerd worden als 'twijfelachtig' of ontoegankelijk voor mensen uit niet-vitale beroepen     
-**Schets:** kaart, en nog een visualisatie in de vorm van een bar chart om de aantallen aan te geven (of time instance/gantt?)    
+**Schets:** kaart, en nog wat visualisaties in de vorm van een bar chart om de aantallen aan te geven (of time instance/gantt)  , of hierarchic chart voor verhouding met 'niet-conflicterend'.  
+
+<img src="https://github.com/deannabosschert/functional-programming/blob/trunk/assets/img/kaart_avondklok.png" alt="sketch of a datavisualization with a map" width="700" height="300">
+
+Interactive kaart; zoom-able per provincie/stad en tooltips als je een parkeerplaats selecteert.
+Vragen:
+* Labels in de legenda
+* Beide soorten weergeven? Of alleen een landelijke kaart met de plaatsen waarin conflicterende parkeergelegenheden aanwezig zijn
+* Combineren met iets als een pie chart en andere charts voor het aantonen van de verhouding; in een soort storytelling-verhaal?        
+
+<img src="https://github.com/deannabosschert/functional-programming/blob/trunk/assets/img/waffle_chart.png" alt="sketch of a waffle chart" style="display: inline-block" width="280" height="155"><img src="https://github.com/deannabosschert/functional-programming/blob/trunk/assets/img/pie_chart_avondklok.png" alt="sketch of a pie chart" style="display: inline-block;"  width="205" height="180">
 
 ### Deelvraag 2: parkeergelegenheid coronateststraten
 **Is er in de buurt van Coronateststraten, genoeg parkeergelegenheid voor wie moet wachten op zijn/haar test?**    
@@ -62,23 +71,6 @@ For more information about the concept, see the [wiki page](https://github.com/d
 
 **Aanname:** een aantal zullen niet genoeg parkeergelegenheid hebben    
 **Schets:** kaart, en nog een visualisatie in de vorm van een bar chart om de aantallen aan te geven    
-
-### Deelvraag 3: misgelopen parkeerkosten
-**Wat zouden de misgelopen parkeerkosten zijn bij de Coronateststraten?**      
-_Indien je je moet laten testen, mag je op de nabijgelegen parkeerplaats gratis parkeren voor de tijd dat je in de rij staat voor de test.   
-Hoe hoog is het bedrag aan misgelopen parkeerkosten, wanneer je het vergelijkt met de winsten op die plek pre-corona?_    
-**Datasets:**    
-* https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-TARIEFDEEL/534e-5vdg.   
-* Coronateststraten    
-
-**Aanname:** er zal wel een verlies zichbaar zijn, tenzij er bij velen niet duidelijk is     aangegeven dat je geen parkeergeld hoeft te betalen en er dan dus juist wél parkeerkaartjes worden gekocht   
-**Schets:** line graph, en kaart (bubble map) met de gebieden met grootste verliezen worden aangeduid?    
-
-### Deelvraag 4: parkeerplaatsen bezet door thuiswerkers
-**Zijn er parkeerplekken die momenteel bezet worden gehouden doordat ze thuiswerken, terwijl ze normaal vrij zijn voor bijv winkelend bezoek van de stad?**     
-**Dataset:** pre-corona parkeerdata en huidige parkeerdata in stadscentra?    
-**Aanname:** er is een verschil in parkeergedrag zichtbaar; mensen parkeren ergens voor langere tijd ipv voor korte periodes aaneen    
-**Schets:** kaart, en gantt/instance chart per situatie om de verschillen in parkeergedrag te tonen?
 
 ### Additional Datasets
 * https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-GEOMETRIE-GEBIED/nsk3-v9n7 (thanks to [Zekkie](https://github.com/ZekkieB) via [issue 9](https://github.com/deannabosschert/functional-programming/issues/9))
@@ -150,7 +142,7 @@ RDW dataset
 * Prices
 
 #### Rate limiting
-None! Or well, 1.3 million I've heard.
+None! Or well, 1.3 million I've heard. Just limit your requests, OK?
 
 ### 💽 Data cleaning
 _What has been done with the fetched data?_What has been done with the initial data? Cleaning pattern?_
@@ -210,6 +202,7 @@ See my [wiki](https://github.com/deannabosschert/functional-programming/wiki) fo
 - Our superamazingteachers at the [Tech Track @CMD](https://github.com/cmda-tt/) :heart:
 - Curran :heart:
 - My amazing support group :heart:
+- Everyone keeping up with/tolerating me in Teams :heart:
 
 ### (Small) inspiration sources
 - https://www.section.io/engineering-education/templating-your-static-site/ for using ejs with 11ty
