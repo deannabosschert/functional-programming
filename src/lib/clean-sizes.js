@@ -9,7 +9,7 @@ module.exports = async (variable) => {
   try {
     return cleanColors = await getData(questionnaire, variable) // wait for data
       .then(data => removeWhitespace(data, variable)) // remove whitespace
-      .then(data => pointToComma(data, variable))
+      .then(data => pointToComma(data, variable)) // replace points with comma's
   } catch (err) {
     console.error(err)
   }
