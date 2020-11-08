@@ -6,12 +6,13 @@ module.exports = function getData(datasource, variable) {
   //   return data
   // })
   return new Promise((resolve, reject) => {
-    // const data = datasource.map(item => ({ // use this when determined which keys to use
-    //   [variable]: item[variable]
-    // }))
-    const data = datasource.map(item => {
-      return item
-    })
+    const data = datasource.map(item => ({ // use this when determined which keys to use
+      AreaId: item.AreaId,
+      AreaManagerId: item.AreaManagerId,
+      OpenAllYear: item.OpenAllYear,
+      ExitPossibleAllDay: item.ExitPossibleAllDay
+    }))
+
     resolve(data)
   })
 
