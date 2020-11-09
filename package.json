@@ -3,15 +3,15 @@
   "version": "1.0.0",
   "description": "Course in the Tech Track of CMD's Information Design semester, focused on functional programming.",
   "scripts": {
-    "predev": "rimraf docs",
+    "predev": "rimraf _site",
     "dev:eleventy": "npx @11ty/eleventy --formats=html,njk,ejs,gif,jpg,png,css --serve --port=3000",
-    "dev:css": "sass --watch assets/scss:docs/assets/css/",
+    "dev:css": "sass --watch assets/scss:_site/assets/css/",
     "dev": "cross-env ELEVENTY_ENV=development run-p dev:*",
     "debug": "DEBUG=* eleventy",
-    "prebuild": "rimraf docs",
+    "prebuild": "rimraf _site",
     "build": "cross-env ELEVENTY_ENV=production run-s build:*",
     "build:eleventy": "eleventy",
-    "build:css": "node-sass --importer node_modules/node-sass-glob-importer/dist/cli.js assets/scss/index.scss docs/assets/css/index.css"
+    "build:css": "node-sass --importer node_modules/node-sass-glob-importer/dist/cli.js assets/scss/index.scss _site/assets/css/index.css"
   },
   "repository": {
     "type": "git",
