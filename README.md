@@ -7,11 +7,11 @@ Focus on the data cleaning beforehand.
 
 # Survey Data Cleaning + Auto’s in de stad
 <!-- [![Netlify Status](https://api.netlify.com/api/v1/badges/eaf5a426-0c2d-4380-b88d-e4441f880600/deploy-status)](https://app.netlify.com/sites/functional-programming-2021/deploys) ... [link to deploy](https://functional-programming-2021.netlify.app/)-->
-![screenshot of website](https://github.com/deannabosschert/functional-programming/blob/trunk/docs/assets/img/screenshot_website.png)
+![screenshot of website](https://github.com/deannabosschert/functional-programming/blob/trunk/_site/assets/img/screenshot_website.png)
 <details>
   <summary><strong>gif screencapture</strong> (click to expand)</summary>
-  
-![gif of website](https://github.com/deannabosschert/functional-programming/blob/trunk/docs/assets/img/screenshot_website.gif)
+
+![gif of website](https://github.com/deannabosschert/functional-programming/blob/trunk/_site/assets/img/screenshot_website.gif)
 </details>
 
 This assignment actually consists of two parts:
@@ -58,7 +58,7 @@ For more information about the concept, see the [wiki page](https://github.com/d
 * AreaManagerId (api: areamanagerid) - Identificatiecode van de gebiedsbeheerder of parkeerexploitant.            
 * DayTimeFrame (api: daytimeframe) - Naam van een bepaalde dag voor een gebiedsbeheerder. Dit zijn de weekdagen maandag tot en met zondag, en de namen van de speciale dagen.    
 * StartTimeTimeFrame (api: starttimetimeframe) - Datum en tijd van het begin van een periode waarop een bepaald tijdvak geldig is.          
-* EndTimeTimeFrame (api: endtimetimeframe) - Tijdstip (uumm) waarop het tijdvak eindigt. Voor aansluitende tijdvakken is de EndTimeTimeFrame van het eerste tijdvak gelijk aan StartTimeTimeFrame van het tweede. 
+* EndTimeTimeFrame (api: endtimetimeframe) - Tijdstip (uumm) waarop het tijdvak eindigt. Voor aansluitende tijdvakken is de EndTimeTimeFrame van het eerste tijdvak gelijk aan StartTimeTimeFrame van het tweede.
 * EndDateTimeFrame (api: enddatetimeframe) - Datum en tijd van het einde van een periode waarin een bepaald tijdvak geldig is.    
 
 * MaxDurationRight (api: maxdurationright) - De maximale tijdsduur waarvoor in een gebied dat valt onder de betreffende regeling, in dit betreffende tijdvak een recht kan worden verworven (minuten).
@@ -98,12 +98,12 @@ Vragen:
 * Drukte bij Coronateststraten?  
 
 ### Datapunten/kolommen
-#### Parkeerplaatsen: dataset 1 (capaciteit) 
+#### Parkeerplaatsen: dataset 1 (capaciteit)
 * AreaID (api: areaid)- Identificatiecode van een parkeergebied of - faciliteit.               
 * Capacity (api: capacity)- Het aantal parkeerplaatsen in een parkeergebied of –faciliteit.
 
 Eventueel bruikbaar:
-      
+
 * ChargingPointCapacity      
 * DisabledAccess (api: disabledaccess)- Indicator die aangeeft aangeeft of een parkeerterrein toegankelijk is voor personen die afhankelijk zijn van een rolstoel. J = Ja, toegankelijkheid met een rolstoel. N = Nee, geen toegankelijkheid met een rolstoel.
 
@@ -176,15 +176,15 @@ npm run dev
 #### Scripts
 ```json
   "scripts": {
-    "predev": "rimraf docs",
+    "predev": "rimraf _site",
     "dev:eleventy": "npx @11ty/eleventy --formats=html,njk,ejs,gif,jpg,png,css --serve --port=3000",
-    "dev:css": "sass --watch assets/scss:docs/assets/css/",
+    "dev:css": "sass --watch assets/scss:_site/assets/css/",
     "dev": "cross-env ELEVENTY_ENV=development run-p dev:*",
     "debug": "DEBUG=* eleventy",
-    "prebuild": "rimraf docs",
+    "prebuild": "rimraf _site",
     "build": "cross-env ELEVENTY_ENV=production run-s build:*",
     "build:eleventy": "eleventy",
-    "build:css": "node-sass --importer node_modules/node-sass-glob-importer/dist/cli.js assets/scss/index.scss docs/assets/css/index.css"
+    "build:css": "node-sass --importer node_modules/node-sass-glob-importer/dist/cli.js assets/scss/index.scss _site/assets/css/index.css"
   }
 ```
 
@@ -240,8 +240,8 @@ In this course we were rated on:
 This assessment focusses on:
 * goal 1 (learn how to create with libraries)
 * goal 2 (create interactive visualisations from external data)
-* subgoal 1 (read docs)
-* subgoal 2 (write docs)
+* subgoal 1 (read _site)
+* subgoal 2 (write _site)
 * subgoal 5 (manipulate elements)
 * subgoal 6 (load external data)
 * subgoal 7 (transform data)
@@ -278,7 +278,7 @@ See my [wiki](https://github.com/deannabosschert/functional-programming/wiki) fo
 ### (Small) inspiration sources
 - https://www.section.io/engineering-education/templating-your-static-site/ for using ejs with 11ty
 - https://opendata.rdw.nl/browse?category=Parkeren&provenance=official&page=1 for the datasets
-- Docs of Nunjucks, Eleventy, EJS, D3.js, etc.
+- _site of Nunjucks, Eleventy, EJS, D3.js, etc.
 - My former projects, like progressive-web-apps
 
 ## 🗺️ License
