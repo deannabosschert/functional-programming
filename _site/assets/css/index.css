@@ -1,0 +1,416 @@
+/*
+  CSS Reset
+  http://meyerweb.com/eric/tools/css/reset/
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+button {
+  padding: 0;
+  color: inherit;
+  background-color: inherit;
+  border: 0px;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* VARIABLES */
+@font-face {
+  font-family: "AbrilFatface";
+  src: local("AbrilFatface-Regular"), local("AbrilFatfaceRegular"), local("AbrilFatface"), url(./fonts/AbrilFatface-Regular.ttf) format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto-Thin"), local("RobotoThin"), url(./fonts/Roboto-Thin.ttf);
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto-ThinItalic"), local("RobotoThinItalic"), url(./fonts/Roboto-ThinItalic.ttf);
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto-Light"), local("RobotoLight"), url(./fonts/Roboto-Light.ttf);
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto-LightItalic"), local("RobotoLightItalic"), url(./fonts/Roboto-LightItalic.ttf);
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto-Regular"), local("RobotoRegular"), local("Roboto"), url(./fonts/Roboto-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto-Italic"), local("RobotoItalic"), url(./fonts/Roboto-Italic.ttf);
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Medium.ttf");
+  src: local("Roboto-Medium"), local("RobotoMedium"), url(./fonts/Roboto-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto-MediumItalic"), local("RobotoMediumItalic"), url(./fonts/Roboto-MediumItalic.ttf);
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto-Bold"), local("RobotoBold"), url(./fonts/Roboto-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto-BoldItalic"), local("RobotoBoldItalic"), url(./fonts/Roboto-BoldItalic.ttf);
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto-Black"), local("RobotoBlack"), url(./fonts/Roboto-Black.ttf);
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto-BlackItalic"), local("RobotoBlackItalic"), url(./fonts/Roboto-BlackItalic.ttf);
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+/* Older browsers */
+html {
+  font-size: 16px;
+}
+
+/* Modern browsers only need this one */
+@media screen and (min-width: 25em) {
+  html {
+    font-size: calc(16px + (24 - 16) * (100vw - 400px) / (800 - 400));
+  }
+}
+/* Safari <8 and IE <11 */
+@media screen and (min-width: 25em) {
+  html {
+    font-size: calc(16px + (24 - 16) * (100vw - 400px) / (800 - 400));
+  }
+}
+@media screen and (min-width: 50em) {
+  html {
+    font-size: calc(16px + (24 - 16) * (100vw - 400px) / (800 - 400));
+  }
+}
+html {
+  height: 100%;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+html {
+  font-size: 0.8rem;
+}
+@media screen and (min-width: 20rem) {
+  html {
+    font-size: calc(0.8rem + 1.2 * ((100vw - 20rem) / 30));
+  }
+}
+@media screen and (min-width: 50rem) {
+  html {
+    font-size: 2rem;
+  }
+}
+
+body {
+  line-height: 1.2rem;
+  padding: 1.2rem 0;
+  margin: 0 auto;
+  background-image: linear-gradient(rgba(200, 50, 50, 0.25) 1px, transparent 1px);
+  background-size: 1px 1.2rem;
+}
+
+p {
+  line-height: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+h1,
+h2 {
+  font-weight: 600;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  margin-bottom: calc((1.2rem - 1.8rem) + 1.2rem);
+  font-variant: small-caps;
+  width: 100%;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  margin-bottom: calc((1.2rem - 1.5rem) + 1.2rem);
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  margin-bottom: calc((1.2rem - 1.25rem) + 1.2rem/3);
+}
+
+h4 {
+  font-size: 1rem;
+  line-height: 1rem;
+  margin-bottom: calc((1.2rem - 1rem) + 1.2rem);
+}
+
+h5 {
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  margin-bottom: calc((1.2rem - 0.875rem) + 1.2rem);
+}
+
+h6 {
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  margin-bottom: calc((1.2rem - 0.75rem) + 1.2rem);
+}
+
+p {
+  font-size: 0.6rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 0.6rem;
+}
+
+footer p {
+  font-size: 0.5rem;
+}
+
+/* BASE */
+html {
+  max-width: 100vw;
+}
+
+body {
+  font-family: sans-serif;
+  background-image: radial-gradient(#ece0ec 10%, transparent 0);
+  background-size: 20px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav {
+  margin-bottom: 1rem;
+  width: 22rem;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-radius: 5px;
+}
+
+nav ul li {
+  padding: 0.2rem;
+  border-bottom: 3px solid #754575;
+  margin-bottom: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ol {
+  list-style: decimal;
+}
+
+main {
+  width: 85vw;
+  align-self: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  background: #fefefe;
+  box-shadow: inset 6px 6px 9px #f1f1f1, inset -6px -6px 9px #ffffff;
+  margin-bottom: 2rem;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+p {
+  max-width: 80%;
+  text-align: center;
+}
+
+main li {
+  margin: 0.2rem;
+  width: 4.5rem;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+footer p {
+  width: 100%;
+}
+
+/* LAYOUT */
+.bedroomSizes,
+.colorList, .shoeSizes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 80vw;
+  color: white;
+}
+
+.colorList li {
+  padding: 1.2rem 1rem;
+}
+
+.bedroomSizes, .shoeSizes {
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.bedroomSizes li {
+  padding: 0.5rem 0.3rem;
+  background-color: #b582b5;
+}
+
+.bedroomSizes li:nth-child(even) {
+  background-color: #ece0ec;
+  color: black;
+}
+
+.shoeSizes li {
+  width: 4.54rem;
+  padding: 0.5rem 0.3rem;
+  background-color: #ff9dab;
+}
+
+.shoeSizes li:nth-child(even) {
+  background-color: #E6E6FA;
+  color: black;
+}
+
+.backToTop {
+  align-self: center;
+  text-align: center;
+}
+
+/* SIZING */
+/* STATE */
+/* THEME */
+
+/*# sourceMappingURL=index.css.map */
