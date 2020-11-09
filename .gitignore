@@ -19,5 +19,7 @@ testlocaties_24_augustus_adressen(2).csv
 *.csv
 testlocaties_24_augustus_adressen.json
 testlocaties_24_augustus_adressen 2.json
+docs
+docs/
 
 above filenames are a mess because of an issue with iCloud duplicating stuff

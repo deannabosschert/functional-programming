@@ -8,6 +8,7 @@
     "dev:css": "sass --watch assets/scss:_site/assets/css/",
     "dev": "cross-env ELEVENTY_ENV=development run-p dev:*",
     "debug": "DEBUG=* eleventy",
+    "prebuild": "rimraf _site",
     "build": "cross-env ELEVENTY_ENV=production run-s build:*",
     "build:eleventy": "eleventy",
     "build:css": "node-sass --importer node_modules/node-sass-glob-importer/dist/cli.js assets/scss/index.scss _site/assets/css/index.css"

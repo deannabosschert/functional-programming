@@ -1,18 +1,21 @@
 const fetch = require("node-fetch");
 
-module.exports = function getData(datasource, variable) {
-  // return fetch(url).then(response => response.json()).then((data) => {   // use this when switching to fetching data from API
+module.exports = function getData(datasource) {
+  return new Promise((resolve, reject) => {
+  // return fetch(datasource).then(response => response.json()).then((data) => {   // use this when switching to fetching data from API
   //   console.log("Retrieved " + data.length + " records.")
   //   return data
   // })
-  return new Promise((resolve, reject) => {
-    // const data = datasource.map(item => ({ // use this when determined which keys to use
-    //   [variable]: item[variable]
+
+
+    // const data = datasource.map(item => ({ // used this for direct mapping: remove later
+    //   AreaId: item.AreaId,
+    //   AreaManagerId: item.AreaManagerId,
+    //   OpenAllYear: item.OpenAllYear,
+    //   ExitPossibleAllDay: item.ExitPossibleAllDay
     // }))
-    const data = datasource.map(item => {
-      return item
-    })
-    resolve(data)
+    // const data = datasource
+    resolve(datasource)
   })
 
 
