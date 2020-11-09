@@ -1,4 +1,4 @@
-# Functional Programming
+# frontend data
 ## Assessment
 Create a data visualisation with d3 based on given data.
 Focus on the data cleaning beforehand.
@@ -6,12 +6,12 @@ Focus on the data cleaning beforehand.
 > Alle teksten in het Nederlands behoren tot de concept/developmentfase, uiteindelijk zal de readme volledig in het Engels zijn. Zo kan ik concept VS eindproduct wat beter scheiden.
 
 # Survey Data Cleaning + Auto’s in de stad
-<!-- [![Netlify Status](https://api.netlify.com/api/v1/badges/eaf5a426-0c2d-4380-b88d-e4441f880600/deploy-status)](https://app.netlify.com/sites/functional-programming-2021/deploys) ... [link to deploy](https://functional-programming-2021.netlify.app/)-->
-![screenshot of website](https://github.com/deannabosschert/functional-programming/blob/trunk/_site/assets/img/screenshot_website.png)
+<!-- [![Netlify Status](https://api.netlify.com/api/v1/badges/eaf5a426-0c2d-4380-b88d-e4441f880600/deploy-status)](https://app.netlify.com/sites/frontend-data-2021/deploys) ... [link to deploy](https://frontend-data-2021.netlify.app/)-->
+![screenshot of website](https://github.com/deannabosschert/frontend-data/blob/trunk/_site/assets/img/screenshot_website.png)
 <details>
   <summary><strong>gif screencapture</strong> (click to expand)</summary>
 
-![gif of website](https://github.com/deannabosschert/functional-programming/blob/trunk/_site/assets/img/screenshot_website.gif)
+![gif of website](https://github.com/deannabosschert/frontend-data/blob/trunk/_site/assets/img/screenshot_website.gif)
 </details>
 
 This assignment actually consists of two parts:
@@ -19,7 +19,7 @@ This assignment actually consists of two parts:
 * RDW data manipulation and rendering
 
 On the deploy, these two parts are divided between the 'Survey Data' and 'RDW Data'-tabs.
-For this repo, I decided to keep it all as it were after the survey data-part, as the whole part of functional programming is to be able to re-use functions anyways. I think it's much cleaner this way too, otherwise I would've had some weird folder structure. The two parts are clearly divived in the documentation in the [wiki](https://github.com/deannabosschert/functional-programming/wiki) though.
+For this repo, I decided to keep it all as it were after the survey data-part, as the whole part of frontend data is to be able to re-use functions anyways. I think it's much cleaner this way too, otherwise I would've had some weird folder structure. The two parts are clearly divived in the documentation in the [wiki](https://github.com/deannabosschert/frontend-data/wiki) though.
 
 ## Table of Contents
   * [Assessment](#assessment)
@@ -36,12 +36,12 @@ For this repo, I decided to keep it all as it were after the survey data-part, a
   * [🗺️ License](#----license)
 
 ## ✅ To-do
-See the [project board](https://github.com/deannabosschert/functional-programming/projects/1) for my current to-do's
+See the [project board](https://github.com/deannabosschert/frontend-data/projects/1) for my current to-do's
 
 ## 📋 Concept
 Conceptvragen zijn hieronder uitgewerkt; zodra de app 'klaar' is zal ik hier onder 'concept' van begin tot eind beschrijven wat de gebruiker specifiek op mijn site kan doen. Zal ook in het Engels uitgeschreven worden.
 
-For more information about the concept, see the [wiki page](https://github.com/deannabosschert/functional-programming/wiki/Concept) (in Dutch).
+For more information about the concept, see the [wiki page](https://github.com/deannabosschert/frontend-data/wiki/Concept) (in Dutch).
 
 ## 🅿️ Parkeergelegenheden in coronatijd
 **Welke bijkomende problemen zijn ontstaan met de komst van corona, met betrekking tot parkeergelegenheden?**    
@@ -78,7 +78,7 @@ Sidenote: filter alle area's eruit die eerder dan vandaag, eindigen. Als het goe
 ### Schetsen
 Kaart, en nog wat visualisaties in de vorm van een bar chart om de aantallen aan te geven (of time instance/gantt)  , of hierarchic chart voor verhouding met 'niet-conflicterend'.  
 
-<img src="https://github.com/deannabosschert/functional-programming/blob/trunk/assets/img/kaart_avondklok.png" alt="sketch of a datavisualization with a map" width="700" height="300">
+<img src="https://github.com/deannabosschert/frontend-data/blob/trunk/assets/img/kaart_avondklok.png" alt="sketch of a datavisualization with a map" width="700" height="300">
 
 Interactive kaart; zoom-able per provincie/stad en tooltips als je een parkeerplaats selecteert.
 Vragen:
@@ -86,7 +86,7 @@ Vragen:
 * Beide soorten weergeven? Of alleen een landelijke kaart met de plaatsen waarin conflicterende parkeergelegenheden aanwezig zijn
 * Combineren met iets als een pie chart en andere charts voor het aantonen van de verhouding; in een soort storytelling-verhaal?        
 
-<img src="https://github.com/deannabosschert/functional-programming/blob/trunk/assets/img/waffle_chart.png" alt="sketch of a waffle chart" style="display: inline-block" width="280" height="155"><img src="https://github.com/deannabosschert/functional-programming/blob/trunk/assets/img/pie_chart_avondklok.png" alt="sketch of a pie chart" style="display: inline-block;"  width="205" height="180">
+<img src="https://github.com/deannabosschert/frontend-data/blob/trunk/assets/img/waffle_chart.png" alt="sketch of a waffle chart" style="display: inline-block" width="280" height="155"><img src="https://github.com/deannabosschert/frontend-data/blob/trunk/assets/img/pie_chart_avondklok.png" alt="sketch of a pie chart" style="display: inline-block;"  width="205" height="180">
 
 ## Deelvraag 2: parkeergelegenheid coronateststraten
 **Is er in de buurt van Coronateststraten, genoeg parkeergelegenheid voor wie moet wachten op zijn/haar test?**    
@@ -132,15 +132,15 @@ _GGD,Adres,provincie,lng,lat_
 Kaart, en nog een visualisatie in de vorm van een bar chart om de aantallen aan te geven    
 
 ### Additional Datasets
-* https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-GEOMETRIE-GEBIED/nsk3-v9n7 (thanks to [Zekkie](https://github.com/ZekkieB) via [issue 9](https://github.com/deannabosschert/functional-programming/issues/9))
+* https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-GEOMETRIE-GEBIED/nsk3-v9n7 (thanks to [Zekkie](https://github.com/ZekkieB) via [issue 9](https://github.com/deannabosschert/frontend-data/issues/9))
 
-For more ideas, see the [Wiki page about my concept](https://github.com/deannabosschert/functional-programming/wiki)  
+For more ideas, see the [Wiki page about my concept](https://github.com/deannabosschert/frontend-data/wiki)  
 
 
 ## ⚙️ Installation
 Clone this repository to your own device:
 ```bash
-$ git https://github.com/deannabosschert/functional-programming.git
+$ git https://github.com/deannabosschert/frontend-data.git
 ```
 Then, navigate to this folder and run:
 
@@ -218,7 +218,7 @@ None! Or well, 1.3 million I've heard. Request a few datasets in under 10 second
 ### 💽 Data cleaning
 _What has been done with the fetched data?_What has been done with the initial data? Cleaning pattern?_
 
-See my [Wiki](https://github.com/deannabosschert/functional-programming-2021/wiki/Data-opschonen) for a detailed view of my data cleaning and functional patterns.
+See my [Wiki](https://github.com/deannabosschert/frontend-data-2021/wiki/Data-opschonen) for a detailed view of my data cleaning and functional patterns.
 
 
 ## 👯🏿‍ Features (+ wishlist)
@@ -253,19 +253,19 @@ This assessment focusses on:
 
 **Goal**: learn how to create with libraries   
 I've learned how to load data locally and to fetch externally from an API, to clean that data and render this data.    
-See my [wiki](https://github.com/deannabosschert/functional-programming/wiki) for more.    
+See my [wiki](https://github.com/deannabosschert/frontend-data/wiki) for more.    
 
 ### Week 2 - Datavisualizations 📊
 **Goal**: create interactive visualisations from external data    
 I've learned how to visualize the previous cleaned data in an interactive datavisualization, made with D3.js   
-See my [wiki](https://github.com/deannabosschert/functional-programming/wiki) for more.    
+See my [wiki](https://github.com/deannabosschert/frontend-data/wiki) for more.    
 
 </details>
 
 ### Rubric
 
-[Rubric- detailed rating of my project](https://github.com/deannabosschert/functional-programming/wiki/Rubric)
-![rubric](https://github.com/deannabosschert/functional-programming/blob/master/src/img/rubric.png)
+[Rubric- detailed rating of my project](https://github.com/deannabosschert/frontend-data/wiki/Rubric)
+![rubric](https://github.com/deannabosschert/frontend-data/blob/master/src/img/rubric.png)
 
 ## ℹ️ Resources
 
@@ -283,5 +283,5 @@ See my [wiki](https://github.com/deannabosschert/functional-programming/wiki) fo
 
 ## 🗺️ License
 Author: [Deanna Bosschert](https://github.com/deannabosschert) , license by
-[MIT](https://github.com/deannabosschert/functional-programming/blob/master/LICENSE)      
+[MIT](https://github.com/deannabosschert/frontend-data/blob/master/LICENSE)      
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
