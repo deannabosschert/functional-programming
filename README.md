@@ -3,8 +3,6 @@
 Learn how to clean data using functional programming patterns.
 Later (during frontend data), create a data visualisation with d3 based on given data. See repo.
 
-> Alle teksten in het Nederlands behoren tot de concept/developmentfase, uiteindelijk zal de readme volledig in het Engels zijn. Zo kan ik concept VS eindproduct wat beter scheiden.
-
 # Survey Data Cleaning
 [![Netlify Status](https://api.netlify.com/api/v1/badges/83e1acb5-f54f-4736-b142-43061eacecb9/deploy-status)](https://app.netlify.com/sites/functional-programming-2021/deploys)
  ... [link to deploy](https://functional-programming-2021.netlify.app/)
