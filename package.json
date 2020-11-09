@@ -1,5 +1,5 @@
 {
-  "name": "frontend-data",
+  "name": "functional-programming",
   "version": "1.0.0",
   "description": "Course in the Tech Track of CMD's Information Design semester, focused on frontend data.",
   "scripts": {
@@ -15,15 +15,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/deannabosschert/frontend-data.git"
+    "url": "git+https://github.com/deannabosschert/functional-programming.git"
   },
   "keywords": [],
   "author": "Deanna Bosschert",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/deannabosschert/frontend-data/issues"
+    "url": "https://github.com/deannabosschert/functional-programming/issues"
   },
-  "homepage": "https://github.com/deannabosschert/frontend-data#readme",
+  "homepage": "https://github.com/deannabosschert/functional-programming#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
     "cross-env": "^7.0.2",
