@@ -1,7 +1,7 @@
 # Functional Programming
 ## Assessment
-Create a data visualisation with d3 based on given data.
-Focus on the data cleaning beforehand.
+Learn how to clean data using functional programming patterns.
+Later (during frontend data), create a data visualisation with d3 based on given data.
 
 > Alle teksten in het Nederlands behoren tot de concept/developmentfase, uiteindelijk zal de readme volledig in het Engels zijn. Zo kan ik concept VS eindproduct wat beter scheiden.
 
