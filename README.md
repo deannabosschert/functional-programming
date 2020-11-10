@@ -40,9 +40,9 @@ See the [project board](https://github.com/deannabosschert/functional-programmin
 
 ## 📋 Concept
 The actual concept for the end project is documented in the wiki of frontend data
-For more information about this concept, see the [wiki page](https://github.com/deannabosschert/frontend-data/wiki/Concept) (in Dutch).
+For more information about that concept, visit that [wiki page](https://github.com/deannabosschert/frontend-data/wiki/Concept) (in Dutch).
 
-For this repo, the concept was to fetch a dataset of a questionnaire that the students filled in during  the Information Design Datavisualization-course, and clean this data using filters based on functional programming principles.
+For this repo, the concept was to fetch a dataset of a questionnaire that the students filled in during  the Information Design Datavisualization-course, and to clean this data using filters based on functional programming principles.
 
 ## ⚙️ Installation
 Clone this repository to your own device:
@@ -93,7 +93,7 @@ npm run dev
 ### 💽 Data cleaning
 _What has been done with the fetched data?_What has been done with the initial data? Cleaning pattern?_
 
-See my [Wiki](https://github.com/deannabosschert/functional-programming-2021/wiki/Data-opschonen) for a detailed view of my data cleaning and functional patterns.
+See my [Wiki](https://github.com/deannabosschert/functional-programming/wiki/Data-opschonen) for a detailed view of my data cleaning and functional patterns.
 
 
 ## 👯🏿‍ Features (+ wishlist)
@@ -124,7 +124,7 @@ This assessment focusses on:
 * subgoal 9 (use libraries)
 
 
-### Week 1 - Data Cleaning 🐒
+### Week 1 - Data Cleaning 🧹
 
 **Goal**: learn how to create with libraries   
 I've learned how to load data locally and to fetch externally from an API, to clean that data and render this data.    
@@ -140,7 +140,7 @@ See my [wiki](https://github.com/deannabosschert/functional-programming/wiki) fo
 ### Rubric
 
 [Rubric- detailed rating of my project](https://github.com/deannabosschert/functional-programming/wiki/Rubric)
-![rubric](https://github.com/deannabosschert/functional-programming/blob/master/src/img/rubric.png)
+![rubric](https://github.com/deannabosschert/functional-programming/blob/trunk/assets/img/rubric.png)
 
 ## ℹ️ Resources
 
