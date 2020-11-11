@@ -2,25 +2,14 @@
 .DS_Store 2
 node_modules
 node_modules 2
-scripts
-data
-Survey_Information_Design_clean-parsed 2.js
-Survey_Information_Design_clean-parsed 3.js
 .env
 .env 2
 .env 3
-src/_data/datasets/testlocaties_24_augustus_adressen.csv
-src/_data/datasets/testlocaties_24_augustus_adressen 2.csv
-src/_data/datasets/testlocaties_24_augustus_adressen 3.csv
-testlocaties_24_augustus_adressen.csv
-testlocaties_24_augustus_adressen 2.csv
-testlocaties_24_augustus_adressen 3.csv
-testlocaties_24_augustus_adressen(2).csv
 *.csv
-testlocaties_24_augustus_adressen.json
-testlocaties_24_augustus_adressen 2.json
-docs
-docs/
-yeet.git
+scripts
+Survey_Information_Design_clean-parsed.js
+Survey_Information_Design_clean-parsed 2.js
+Survey_Information_Design_clean-parsed 3.js
+
 
 above filenames are a mess because of an issue with iCloud duplicating stuff
