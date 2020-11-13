@@ -4,7 +4,7 @@ title: Functional Programming
 ---
 <section>
   <article>
-    <h2>Graphs and stuff</h2>
+    <h2>Graphs</h2>
     <div class="chart"></div>
   </article>
   <article>
@@ -34,7 +34,7 @@ title: Functional Programming
     <p>Cleaned by removing whitespace and converting ',' to '.'</p>
     <ul class="bedroomSizes">
       {% for bedroomSize in bedroomSizes %}
-      <li>{{ bedroomSize.bedroomSize | safe }} m²</li>
+      <li>{{ bedroomSize | safe }} m²</li>
       {% else %}
       <li>This would display if the 'bedroomSize'-collection were empty</li>
       {% endfor %}
@@ -45,7 +45,7 @@ title: Functional Programming
     <p>Cleaned by removing whitespace and converting ',' to '.'</p>
     <ul class="shoeSizes">
       {% for shoeSize in shoeSizes %}
-      <li>Maat {{ shoeSize.shoeSize | safe }}</li>
+      <li>Maat {{ shoeSize | safe }}</li>
       {% else %}
       <li>This would display if the 'shoeSize'-collection were empty</li>
       {% endfor %}
