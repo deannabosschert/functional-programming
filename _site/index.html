@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="../assets/css/index.css">
   <title>Functional Programming</title>
-  <script src="https://d3js.org/d3.v3.min.js"  charset="utf-8"></script>
+  <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
 </head>
 
@@ -23,7 +23,7 @@
   <main>
     <section>
   <article>
-    <h2>Graphs and stuff</h2>
+    <h2>Graphs</h2>
     <div class="chart"></div>
   </article>
   <article>
@@ -421,6 +421,8 @@
       
       <li>7 m²</li>
       
+      <li>7 m²</li>
+      
       <li>8 m²</li>
       
       <li>8 m²</li>
@@ -441,6 +443,8 @@
       
       <li>11 m²</li>
       
+      <li>11 m²</li>
+      
       <li>12 m²</li>
       
       <li>12 m²</li>
@@ -485,7 +489,7 @@
       
       <li>15 m²</li>
       
-      <li>16 m²</li>
+      <li>15 m²</li>
       
       <li>16 m²</li>
       
@@ -496,6 +500,14 @@
       <li>16 m²</li>
       
       <li>16 m²</li>
+      
+      <li>16 m²</li>
+      
+      <li>17 m²</li>
+      
+      <li>17 m²</li>
+      
+      <li>17 m²</li>
       
       <li>17 m²</li>
       
@@ -545,6 +557,10 @@
       
       <li>22 m²</li>
       
+      <li>22 m²</li>
+      
+      <li>22 m²</li>
+      
       <li>23 m²</li>
       
       <li>24 m²</li>
@@ -567,25 +583,9 @@
       
       <li>28 m²</li>
       
-      <li>22,5 m²</li>
-      
       <li>32 m²</li>
       
-      <li>17,5 m²</li>
-      
-      <li>17,5 m²</li>
-      
-      <li>22,5 m²</li>
-      
-      <li>15,6 m²</li>
-      
-      <li>11,5 m²</li>
-      
       <li>32 m²</li>
-      
-      <li>17,6 m²</li>
-      
-      <li>7,4 m²</li>
       
       <li>32 m²</li>
       
@@ -609,6 +609,8 @@
     <h2>Shoe sizes</h2>
     <p>Cleaned by removing whitespace and converting ',' to '.'</p>
     <ul class="shoeSizes">
+      
+      <li>Maat 36</li>
       
       <li>Maat 36</li>
       
@@ -638,6 +640,10 @@
       
       <li>Maat 38</li>
       
+      <li>Maat 38</li>
+      
+      <li>Maat 39</li>
+      
       <li>Maat 39</li>
       
       <li>Maat 39</li>
@@ -682,23 +688,15 @@
       
       <li>Maat 42</li>
       
-      <li>Maat 38,5</li>
+      <li>Maat 42</li>
       
-      <li>Maat 36,5</li>
+      <li>Maat 42</li>
       
       <li>Maat 42</li>
       
       <li>Maat 42</li>
       
-      <li>Maat 42,5</li>
-      
       <li>Maat 42</li>
-      
-      <li>Maat 42</li>
-      
-      <li>Maat 44,5</li>
-      
-      <li>Maat 39,5</li>
       
       <li>Maat 42</li>
       
@@ -747,6 +745,8 @@
       <li>Maat 43</li>
       
       <li>Maat 43</li>
+      
+      <li>Maat 44</li>
       
       <li>Maat 44</li>
       
@@ -805,23 +805,115 @@
   <footer><p>Made by Deanna Bosschert, student @ CMD Amsterdam. Coded during the Tech Track of the Information Design Project in 2020.</p></footer>
 
   <script>
-    var data = [4, 8, 15, 16, 23, 42];
+  var data = [36,
+    36,
+    37,
+    37,
+    37,
+    37,
+    38,
+    38,
+    38,
+    38,
+    38,
+    38,
+    38,
+    38,
+    38,
+    38,
+    39,
+    39,
+    39,
+    39,
+    39,
+    39,
+    39,
+    39,
+    39,
+    39,
+    40,
+    40,
+    40,
+    40,
+    40,
+    40,
+    40,
+    41,
+    41,
+    41,
+    41,
+    41,
+    42,
+    42,
+    42,
+    42,
+    42,
+    42,
+    42,
+    42,
+    42,
+    42,
+    42,
+    42,
+    42,
+    42,
+    42,
+    42,
+    42,
+    43,
+    43,
+    43,
+    43,
+    43,
+    43,
+    43,
+    43,
+    43,
+    43,
+    43,
+    43,
+    43,
+    44,
+    44,
+    44,
+    44,
+    44,
+    44,
+    44,
+    44,
+    44,
+    45,
+    45,
+    45,
+    45,
+    45,
+    45,
+    45,
+    45,
+    46,
+    46,
+    46,
+    46,
+    47,
+    47,
+    47,
+    47
+  ]
 
-    var x = d3.scale.linear()
-      .domain([0, d3.max(data)])
-      .range([0, 420]);
+     var x = d3.scale.linear()
+       .domain([0, d3.max(data)])
+       .range([0, 50]);
 
-    d3.select(".chart")
-      .selectAll("div")
-      .data(data)
-      .enter().append("div")
-      .style("width", function(d) {
-        return x(d) + "px";
-      })
-      .text(function(d) {
-        return d;
-      });
-  </script>
-</body>
+     d3.select(".chart")
+       .selectAll("div")
+       .data(data)
+       .enter().append("div")
+       .style("width", function(d) {
+         return x(d) + "px";
+       })
+       .text(function(d) {
+         return d;
+       });
+   </script></body>
 
 </html>
