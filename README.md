@@ -1,7 +1,7 @@
 #### functional programming
 ## Assessment
 Learn how to clean data using functional programming patterns.
-Later (during frontend data), create a data visualisation with d3 based on given data. See repo.
+Later (during frontend data), create a data visualisation with d3 based on given data. See repo of [FD](https://github.com/deannabosschert/frontend-data) for the follow-up.
 
 # Survey Data Cleaning
 [![Netlify Status](https://api.netlify.com/api/v1/badges/83e1acb5-f54f-4736-b142-43061eacecb9/deploy-status)](https://app.netlify.com/sites/functional-programming-2021/deploys)
