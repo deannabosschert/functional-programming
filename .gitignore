@@ -7,8 +7,8 @@ node_modules 2
 .env 3
 *.csv
 scripts
-Survey_Information_Design_clean-parsed 2.js
-Survey_Information_Design_clean-parsed 3.js
+# Survey_Information_Design_clean-parsed 2.js
+# Survey_Information_Design_clean-parsed 3.js
 
 
 above filenames are a mess because of an issue with iCloud duplicating stuff
